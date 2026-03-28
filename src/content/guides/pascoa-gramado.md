@@ -3,7 +3,7 @@ title: "Páscoa em Gramado 2026: Guia Completo de Atrações e Dicas de Viagem"
 order: 5
 destination: "gramado"
 type: "Sazonal"
-heroImage: "/pascoa-gramado-canela-2026.jpg"
+heroImage: "/pascoa-gramado-canela-2026.jpeg"
 rating: 5
 priceRange: 4
 ---
