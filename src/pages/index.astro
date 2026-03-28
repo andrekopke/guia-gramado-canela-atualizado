@@ -2,57 +2,104 @@
 import Layout from '../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 
-const guides = await getCollection('guides');
-// Se você não for usar destinations agora, pode comentar a linha abaixo
-// const destinations = await getCollection('destinations'); 
+// Busca todas as postagens do guia e do blog
+const allGuides = await getCollection('guides');
+const allBlogPosts = await getCollection('blog');
+
+// Combina e ordena todas as postagens (simulado para este exemplo)
+// No futuro, isso será puxado diretamente do seu content
+const featuredPosts = [
+  {
+    title: "Onde comer Fondue em Gramado",
+    description: "Neste guia, selecionamos as experiências gastronômicas que são verdadeiros pilares do destino. Se você quer evitar armadilhas turísticas e descobrir onde o investimento realmente vale a pena...",
+    image: "/images/onde-comer-fondue-gramado.jpg",
+    link: "/guia/onde-comer-fondue"
+  },
+  {
+    title: "Roteiro de 3 dias para família em Canela",
+    description: "Se você está organizando sua primeira visita ou quer se atualizar sobre as novidades de 2026, este guia foi estruturado para ser o seu manual de cabeceira. Aqui, separamos o que realmente importa...",
+    image: "/images/image-placeholder.png",
+    link: "/guia/roteiro-familia-canela"
+  },
+  {
+    title: "Dicas de economia para o Natal Luz",
+    description: "Comer em Gramado e Canela é uma atração à parte, onde a herança dos imigrantes alemães e italianos se reflete em mesas sempre fartas. Para aproveitar os melhores restaurantes sem estourar o orçamento...",
+    image: "/images/image-placeholder.png",
+    link: "/guia/dicas-economia-natal-luz"
+  },
+  {
+    title: "O que fazer em Gramado com chuva",
+    description: "Gramado e Canela são destinos que parecem saídos de um cenário europeu. Se você está planejando sua primeira viagem ou quer descobrir as novidades de 2026, este manual foi desenhado para organizar seu roteiro...",
+    image: "/images/image-placeholder.png",
+    link: "/guia/o-que-fazer-chuva"
+  },
+    {
+    title: "Melhores pousadas românticas em Canela",
+    description: "Neste manual, exploramos as experiências que formam a essência da região, ajudando você a decidir onde investir seu tempo para criar memórias inesquecíveis...",
+    image: "/images/image-placeholder.png",
+    link: "/guia/pousadas-romanticas-canela"
+  },
+  {
+    title: "Guia Completo: Space Adventure Canela",
+    description: "Gramado consolidou-se como o polo das pizzarias temáticas. Mais do que comer, você assiste a um espetáculo. Hector (Magia): Uma imersão no estilo 'Harry Potter' que encanta crianças e adultos...",
+    image: "/images/image-placeholder.png",
+    link: "/guia/space-adventure-canela"
+  }
+];
 ---
 
-<Layout title="Início">
-	<section class="relative h-[500px] flex items-center justify-center text-white">
-		<div class="absolute inset-0 bg-black/40 z-10"></div>
-		<img 
-			src="/mini-mundo-gramado.jpg" 
-			class="absolute inset-0 w-full h-full object-cover" 
-			alt="Gramado RS"
-		/>
-		<div class="relative z-20 text-center px-4">
-			<h1 class="text-4xl md:text-6xl font-extrabold mb-4 drop-shadow-lg">
-				Descubra a Magia das Serras Gaúchas
-			</h1>
-			<p class="text-xl md:text-2xl mb-8 drop-shadow-md">
-				Guia completo de Gramado, Canela e muito mais.
-			</p>
-			<a href="#destinos" class="bg-yellow-500 hover:bg-yellow-600 text-blue-900 font-bold py-3 px-8 rounded-full transition-all text-lg shadow-lg">
-				Explorar Destinos
-			</a>
-		</div>
-	</section>
+<Layout title="Guia de Turismo Gramado e Canela 2026 | Seu Portal Completo na Serra">
+  <article class="font-sans antialiased text-[#333]">
 
-	<section id="destinos" class="container mx-auto px-4 py-16">
-		<h2 class="text-3xl font-bold mb-8 text-blue-800 border-l-4 border-yellow-500 pl-4">
-			Cidades Imperdíveis
-		</h2>
-		
-		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-			<div class="bg-white rounded-xl overflow-hidden shadow-lg hover:scale-[1.02] transition-transform cursor-pointer">
-				<img src="/mini-mundo-gramado.jpg" class="w-full h-48 object-cover" alt="Gramado" />
-				<div class="p-6">
-					<h3 class="text-2xl font-bold mb-2">Gramado</h3>
-					<p class="text-gray-600 mb-4">A cidade mais charmosa do Brasil, famosa pelo Natal Luz e gastronomia única.</p>
-					<span class="text-blue-600 font-semibold">Ver guia completo →</span>
-				</div>
-			</div>
+    <section class="bg-[#eee] py-20 px-6 text-center shadow-inner">
+      <div class="max-w-[1200px] mx-auto bg-white p-6 rounded-2xl shadow-lg border border-gray-100 flex flex-col md:flex-row items-center gap-10">
+        <div class="flex-1 text-center md:text-left">
+          <h1 class="text-[36px] md:text-[48px] font-black leading-[1.2] text-black tracking-tight mb-4">
+            Descubra a Magia das Serras Gaúchas
+          </h1>
+          <p class="text-[18px] text-gray-700 leading-relaxed mb-8 max-w-[600px] mx-auto md:mx-0">
+            Seu portal completo para Gramado, Canela e Serra Gaúcha. Dicas de roteiros, melhores preços e cupons exclusivos.
+          </p>
+          <a href="/guia/o-que-fazer" class="bg-[#ffcc00] text-black px-10 py-3.5 rounded-full text-[16px] font-bold tracking-tight inline-block hover:scale-105 transition-all">
+            Explorar Destinos &rarr;
+          </a>
+        </div>
+        <div class="flex-1">
+          <img src="/images/portico-gramado.jpg" class="w-full h-auto rounded-xl shadow-sm border border-gray-100" alt="Pórtico de Gramado RS" />
+        </div>
+      </div>
+    </section>
 
-			<div class="bg-white rounded-xl overflow-hidden shadow-lg hover:scale-[1.02] transition-transform cursor-pointer">
-				<div class="w-full h-48 bg-gray-300 flex items-center justify-center text-gray-500 italic">
-					Foto de Canela em breve
-				</div>
-				<div class="p-6">
-					<h3 class="text-2xl font-bold mb-2">Canela</h3>
-					<p class="text-gray-600 mb-4">Natureza exuberante, parques temáticos e a imponente Catedral de Pedra.</p>
-					<span class="text-blue-600 font-semibold">Ver guia completo →</span>
-				</div>
-			</div>
-		</div>
-	</section>
+    <hr class="border-t border-gray-200" />
+
+    <section class="max-w-[1200px] mx-auto px-6 py-16">
+      
+      <h2 class="text-[28px] font-extrabold text-[#0055ff] tracking-tight mb-10 flex items-center gap-2">
+        Últimas do Guia e Serras
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+        {featuredPosts.map((post) => (
+          <a href={post.link} class="block bg-white rounded-2xl shadow-sm border border-gray-100 p-6 hover:shadow-md hover:border-[#0055ff] transition-all group">
+            <div class="flex flex-col sm:flex-row gap-6 items-center sm:items-start">
+              <img src={post.image} class="w-[120px] h-[120px] rounded-lg shadow-sm border border-gray-100 flex-shrink-0" alt={post.title} />
+              
+              <div class="flex-1 text-center sm:text-left">
+                <h3 class="text-[19px] font-bold text-black mb-2 tracking-tight group-hover:text-[#0055ff]">
+                  {post.title}
+                </h3>
+                <p class="text-[15px] text-gray-700 leading-relaxed mb-4">
+                  {post.description}
+                </p>
+                <span class="text-[#0055ff] text-[14px] font-semibold flex items-center gap-1 group-hover:underline justify-center sm:justify-start">
+                  Ver guia completo &rarr;
+                </span>
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+
+  </article>
 </Layout>
