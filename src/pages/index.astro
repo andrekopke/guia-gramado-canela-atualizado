@@ -2,48 +2,32 @@
 import Layout from '../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 
-// Busca todas as postagens do guia e do blog
-const allGuides = await getCollection('guides');
-const allBlogPosts = await getCollection('blog');
-
-// Combina e ordena todas as postagens (simulado para este exemplo)
-// No futuro, isso será puxado diretamente do seu content
-const featuredPosts = [
+// Manteremos a definição manual dos Top 4 para garantir a ordem de importância.
+// Usei os nomes exatos das fotos que validamos anteriormente.
+const topFourPosts = [
   {
-    title: "Onde comer Fondue em Gramado",
-    description: "Neste guia, selecionamos as experiências gastronômicas que são verdadeiros pilares do destino. Se você quer evitar armadilhas turísticas e descobrir onde o investimento realmente vale a pena...",
-    image: "/images/onde-comer-fondue-gramado.jpg",
-    link: "/guia/onde-comer-fondue"
+    title: "O que fazer em Gramado e Canela: Roteiro Pilar 2026",
+    description: "Neste guia definitivo, selecionamos as experiências gastronômicas e atrações que são os verdadeiros pilares do destino. Se você quer evitar armadilhas turísticas e descobrir onde o investimento realmente vale a pena...",
+    image: "/o-que-fazer-em-gramado-e-canela.jpg",
+    link: "/guia/o-que-fazer"
   },
   {
-    title: "Roteiro de 3 dias para família em Canela",
-    description: "Se você está organizando sua primeira visita ou quer se atualizar sobre as novidades de 2026, este guia foi estruturado para ser o seu manual de cabeceira. Aqui, separamos o que realmente importa...",
-    image: "/images/image-placeholder.png",
-    link: "/guia/roteiro-familia-canela"
+    title: "Como chegar em Gramado: Guia de Transporte e Logística 2026",
+    description: "Escolher a melhor forma de chegar à Serra Gaúcha é o primeiro passo para uma viagem bem-sucedida. Detalhamos as rotas mais eficientes, custos de aluguel de carro, ônibus e transfer saindo de Porto Alegre ou Caxias...",
+    image: "/como-chegar-em-gramado.jpg",
+    link: "/guia/como-chegar"
   },
   {
-    title: "Dicas de economia para o Natal Luz",
-    description: "Comer em Gramado e Canela é uma atração à parte, onde a herança dos imigrantes alemães e italianos se reflete em mesas sempre fartas. Para aproveitar os melhores restaurantes sem estourar o orçamento...",
-    image: "/images/image-placeholder.png",
-    link: "/guia/dicas-economia-natal-luz"
+    title: "Onde ficar em Gramado e Canela: Melhores Bairros e Hotéis",
+    description: "A escolha do bairro impacta diretamente na sua facilidade de locomoção e orçamento. Analisamos o charme do Bairro Planalto, a praticidade do Centro e a economia de se hospedar em Canela...",
+    image: "/onde-ficar-em-gramado-e-canela.jpg",
+    link: "/guia/onde-ficar"
   },
   {
-    title: "O que fazer em Gramado com chuva",
-    description: "Gramado e Canela são destinos que parecem saídos de um cenário europeu. Se você está planejando sua primeira viagem ou quer descobrir as novidades de 2026, este manual foi desenhado para organizar seu roteiro...",
-    image: "/images/image-placeholder.png",
-    link: "/guia/o-que-fazer-chuva"
-  },
-    {
-    title: "Melhores pousadas românticas em Canela",
-    description: "Neste manual, exploramos as experiências que formam a essência da região, ajudando você a decidir onde investir seu tempo para criar memórias inesquecíveis...",
-    image: "/images/image-placeholder.png",
-    link: "/guia/pousadas-romanticas-canela"
-  },
-  {
-    title: "Guia Completo: Space Adventure Canela",
-    description: "Gramado consolidou-se como o polo das pizzarias temáticas. Mais do que comer, você assiste a um espetáculo. Hector (Magia): Uma imersão no estilo 'Harry Potter' que encanta crianças e adultos...",
-    image: "/images/image-placeholder.png",
-    link: "/guia/space-adventure-canela"
+    title: "Onde comer em Gramado e Canela: Guia Gastronômico Essencial",
+    description: "A gastronomia na Serra Gaúcha vai muito além de uma refeição; é um ritual. Selecionamos os melhores fondues, cafés coloniais e jantares temáticos que operam em 2026, com dicas para economizar...",
+    image: "/onde-comer-em-gramado-e-canela.jpg",
+    link: "/guia/onde-comer"
   }
 ];
 ---
@@ -58,43 +42,68 @@ const featuredPosts = [
             Descubra a Magia das Serras Gaúchas
           </h1>
           <p class="text-[18px] text-gray-700 leading-relaxed mb-8 max-w-[600px] mx-auto md:mx-0">
-            Seu portal completo para Gramado, Canela e Serra Gaúcha. Dicas de roteiros, melhores preços e cupons exclusivos.
+            Seu portal completo para Gramado, Canela e Serra Gaúcha em 2026. Dicas de roteiros de excelência, melhores preços e curadoria especializada.
           </p>
           <a href="/guia/o-que-fazer" class="bg-[#ffcc00] text-black px-10 py-3.5 rounded-full text-[16px] font-bold tracking-tight inline-block hover:scale-105 transition-all">
-            Explorar Destinos &rarr;
+            Explorar Destino Pilar
           </a>
         </div>
         <div class="flex-1">
-          <img src="/images/portico-gramado.jpg" class="w-full h-auto rounded-xl shadow-sm border border-gray-100" alt="Pórtico de Gramado RS" />
+          <img src="/portico-gramado.jpg" class="w-full h-auto rounded-xl shadow-sm border border-gray-100" alt="Pórtico de entrada de Gramado RS" />
         </div>
       </div>
     </section>
 
     <hr class="border-t border-gray-200" />
 
-    <section class="max-w-[1200px] mx-auto px-6 py-16">
+    <section class="bg-white py-16 px-6">
+      <div class="max-w-[800px] mx-auto text-center">
+        <h2 class="text-[32px] md:text-[40px] font-extrabold text-black tracking-tight mb-6 leading-tight">
+          A Missão Deste Guia: Facilitar a Sua Viagem à Serra Gaúcha
+        </h2>
+        <div class="text-[18px] text-gray-800 leading-relaxed space-y-5 text-left md:text-center">
+          <p>
+            Olá, apaixonado por viagens. Se você chegou até aqui, provavelmente compartilha do mesmo sonho que nós: viver dias inesquecíveis entre as hortênsias de Gramado e a imponência de Canela. No entanto, sabemos que planejar a viagem perfeita pode ser exaustivo diante de tantas opções de hotéis, restaurantes e passeios.
+          </p>
+          <p class="font-semibold text-[#0055ff]">
+            Este portal foi criado pensando exatamente em facilitar a vida dos que amam viajar.
+          </p>
+          <p>
+            Nossa filosofia não é apenas listar lugares, mas oferecer uma **curadoria de excelência**. Não trazemos gírias ou opiniões rasas; entregamos guias de autoridade, estruturados para economizar o seu tempo e o seu orçamento, garantindo que cada momento na Serra Gaúcha seja aproveitado com inteligência e prazer. Explore nossos conteúdos essenciais abaixo e comece a desenhar seu roteiro de 2026 hoje mesmo.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="border-t border-gray-200" />
+
+    <section class="max-w-[1200px] mx-auto px-6 py-16 bg-[#fafafa]">
       
       <h2 class="text-[28px] font-extrabold text-[#0055ff] tracking-tight mb-10 flex items-center gap-2">
-        Últimas do Guia e Serras
+        Conteúdo Essencial para o seu Roteiro
       </h2>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-        {featuredPosts.map((post) => (
-          <a href={post.link} class="block bg-white rounded-2xl shadow-sm border border-gray-100 p-6 hover:shadow-md hover:border-[#0055ff] transition-all group">
-            <div class="flex flex-col sm:flex-row gap-6 items-center sm:items-start">
-              <img src={post.image} class="w-[120px] h-[120px] rounded-lg shadow-sm border border-gray-100 flex-shrink-0" alt={post.title} />
+        {topFourPosts.map((post) => (
+          <a href={post.link} class="block bg-white rounded-2xl shadow-sm border border-gray-100 p-6 hover:shadow-lg hover:border-[#0055ff] transition-all group flex flex-col h-full">
+            <div class="flex flex-col sm:flex-row gap-6 items-center sm:items-start flex-grow">
+              
+              <img src={post.image} class="w-[140px] h-[140px] rounded-lg shadow-sm border border-gray-100 flex-shrink-0 object-cover" alt={post.title} />
               
               <div class="flex-1 text-center sm:text-left">
-                <h3 class="text-[19px] font-bold text-black mb-2 tracking-tight group-hover:text-[#0055ff]">
+                <h3 class="text-[20px] font-bold text-black mb-2 tracking-tight group-hover:text-[#0055ff] leading-tight">
                   {post.title}
                 </h3>
-                <p class="text-[15px] text-gray-700 leading-relaxed mb-4">
+                <p class="text-[15px] text-gray-700 leading-relaxed mb-4 line-clamp-3">
                   {post.description}
                 </p>
-                <span class="text-[#0055ff] text-[14px] font-semibold flex items-center gap-1 group-hover:underline justify-center sm:justify-start">
-                  Ver guia completo &rarr;
-                </span>
               </div>
+            </div>
+            
+            <div class="mt-4 pt-4 border-t border-gray-100 sm:text-left text-center">
+              <span class="text-[#0055ff] text-[15px] font-semibold flex items-center gap-1 group-hover:underline justify-center sm:justify-start">
+                Continue lendo o guia completo &rarr;
+              </span>
             </div>
           </a>
         ))}
