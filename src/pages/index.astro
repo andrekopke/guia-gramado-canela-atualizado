@@ -2,34 +2,11 @@
 import Layout from '../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 
-// Manteremos a definição manual dos Top 4 para garantir a ordem de importância.
-// Usei os nomes exatos das fotos que validamos anteriormente.
-const topFourPosts = [
-  {
-    title: "O que fazer em Gramado e Canela: Roteiro Pilar 2026",
-    description: "Neste guia definitivo, selecionamos as experiências gastronômicas e atrações que são os verdadeiros pilares do destino. Se você quer evitar armadilhas turísticas e descobrir onde o investimento realmente vale a pena...",
-    image: "/o-que-fazer-em-gramado-e-canela.jpg",
-    link: "/guia/o-que-fazer"
-  },
-  {
-    title: "Como chegar em Gramado: Guia de Transporte e Logística 2026",
-    description: "Escolher a melhor forma de chegar à Serra Gaúcha é o primeiro passo para uma viagem bem-sucedida. Detalhamos as rotas mais eficientes, custos de aluguel de carro, ônibus e transfer saindo de Porto Alegre ou Caxias...",
-    image: "/como-chegar-em-gramado.jpg",
-    link: "/guia/como-chegar"
-  },
-  {
-    title: "Onde ficar em Gramado e Canela: Melhores Bairros e Hotéis",
-    description: "A escolha do bairro impacta diretamente na sua facilidade de locomoção e orçamento. Analisamos o charme do Bairro Planalto, a praticidade do Centro e a economia de se hospedar em Canela...",
-    image: "/onde-ficar-em-gramado-e-canela.jpg",
-    link: "/guia/onde-ficar"
-  },
-  {
-    title: "Onde comer em Gramado e Canela: Guia Gastronômico Essencial",
-    description: "A gastronomia na Serra Gaúcha vai muito além de uma refeição; é um ritual. Selecionamos os melhores fondues, cafés coloniais e jantares temáticos que operam em 2026, com dicas para economizar...",
-    image: "/onde-comer-em-gramado-e-canela.jpg",
-    link: "/guia/onde-comer"
-  }
-];
+// MÁGICA: Aqui o código busca TODOS os posts da pasta 'guides' automaticamente
+const allGuides = await getCollection('guides');
+
+// Ordena os posts pelo número da 'order' que colocamos no topo de cada arquivo .md
+const sortedGuides = allGuides.sort((a, b) => a.data.order - b.data.order);
 ---
 
 <Layout title="Guia de Turismo Gramado e Canela 2026 | Seu Portal Completo na Serra">
@@ -42,34 +19,28 @@ const topFourPosts = [
             Descubra a Magia das Serras Gaúchas
           </h1>
           <p class="text-[18px] text-gray-700 leading-relaxed mb-8 max-w-[600px] mx-auto md:mx-0">
-            Seu portal completo para Gramado, Canela e Serra Gaúcha em 2026. Dicas de roteiros de excelência, melhores preços e curadoria especializada.
+            Seu portal completo para Gramado, Canela e Serra Gaúcha em 2026. Dicas de roteiros de excelência, melhores preços e cupons exclusivos.
           </p>
-          <a href="/guia/o-que-fazer" class="bg-[#ffcc00] text-black px-10 py-3.5 rounded-full text-[16px] font-bold tracking-tight inline-block hover:scale-105 transition-all">
-            Explorar Destino Pilar
-          </a>
+          
+          <div class="flex flex-col sm:flex-row gap-3 max-w-[500px]">
+             <input type="text" placeholder="O que você procura?" class="px-6 py-3 rounded-full border border-gray-200 w-full outline-none focus:border-[#0055ff]" />
+             <button class="bg-[#ffcc00] text-black px-8 py-3 rounded-full font-bold hover:scale-105 transition-all">Buscar</button>
+          </div>
         </div>
         <div class="flex-1">
-          <img src="/portico-gramado.jpg" class="w-full h-auto rounded-xl shadow-sm border border-gray-100" alt="Pórtico de entrada de Gramado RS" />
+          <img src="/portico-gramado.jpg" class="w-full h-auto rounded-xl shadow-sm border border-gray-100" alt="Pórtico de Gramado" />
         </div>
       </div>
     </section>
 
-    <hr class="border-t border-gray-200" />
-
     <section class="bg-white py-16 px-6">
       <div class="max-w-[800px] mx-auto text-center">
-        <h2 class="text-[32px] md:text-[40px] font-extrabold text-black tracking-tight mb-6 leading-tight">
-          A Missão Deste Guia: Facilitar a Sua Viagem à Serra Gaúcha
+        <h2 class="text-[32px] md:text-[40px] font-extrabold text-black tracking-tight mb-6">
+          A Missão Deste Guia: Facilitar a Sua Viagem
         </h2>
         <div class="text-[18px] text-gray-800 leading-relaxed space-y-5 text-left md:text-center">
           <p>
-            Olá, apaixonado por viagens. Se você chegou até aqui, provavelmente compartilha do mesmo sonho que nós: viver dias inesquecíveis entre as hortênsias de Gramado e a imponência de Canela. No entanto, sabemos que planejar a viagem perfeita pode ser exaustivo diante de tantas opções de hotéis, restaurantes e passeios.
-          </p>
-          <p class="font-semibold text-[#0055ff]">
-            Este portal foi criado pensando exatamente em facilitar a vida dos que amam viajar.
-          </p>
-          <p>
-            Nossa filosofia não é apenas listar lugares, mas oferecer uma **curadoria de excelência**. Não trazemos gírias ou opiniões rasas; entregamos guias de autoridade, estruturados para economizar o seu tempo e o seu orçamento, garantindo que cada momento na Serra Gaúcha seja aproveitado com inteligência e prazer. Explore nossos conteúdos essenciais abaixo e comece a desenhar seu roteiro de 2026 hoje mesmo.
+            Olá, apaixonado por viagens. Este portal foi criado pensando exatamente em facilitar a vida dos que amam viajar, oferecendo uma **curadoria de excelência** para a Serra Gaúcha em 2026.
           </p>
         </div>
       </div>
@@ -79,30 +50,30 @@ const topFourPosts = [
 
     <section class="max-w-[1200px] mx-auto px-6 py-16 bg-[#fafafa]">
       
-      <h2 class="text-[28px] font-extrabold text-[#0055ff] tracking-tight mb-10 flex items-center gap-2">
-        Conteúdo Essencial para o seu Roteiro
+      <h2 class="text-[28px] font-extrabold text-[#0055ff] tracking-tight mb-10">
+        Explore o Nosso Guia Completo
       </h2>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-        {topFourPosts.map((post) => (
-          <a href={post.link} class="block bg-white rounded-2xl shadow-sm border border-gray-100 p-6 hover:shadow-lg hover:border-[#0055ff] transition-all group flex flex-col h-full">
+        {sortedGuides.map((guide) => (
+          <a href={`/guia/${guide.slug}`} class="block bg-white rounded-2xl shadow-sm border border-gray-100 p-6 hover:shadow-lg hover:border-[#0055ff] transition-all group flex flex-col h-full">
             <div class="flex flex-col sm:flex-row gap-6 items-center sm:items-start flex-grow">
               
-              <img src={post.image} class="w-[140px] h-[140px] rounded-lg shadow-sm border border-gray-100 flex-shrink-0 object-cover" alt={post.title} />
+              <img src={guide.data.heroImage} class="w-[140px] h-[140px] rounded-lg shadow-sm border border-gray-100 flex-shrink-0 object-cover" alt={guide.data.title} />
               
               <div class="flex-1 text-center sm:text-left">
                 <h3 class="text-[20px] font-bold text-black mb-2 tracking-tight group-hover:text-[#0055ff] leading-tight">
-                  {post.title}
+                  {guide.data.title}
                 </h3>
                 <p class="text-[15px] text-gray-700 leading-relaxed mb-4 line-clamp-3">
-                  {post.description}
+                  {guide.body.substring(0, 160)}...
                 </p>
               </div>
             </div>
             
-            <div class="mt-4 pt-4 border-t border-gray-100 sm:text-left text-center">
-              <span class="text-[#0055ff] text-[15px] font-semibold flex items-center gap-1 group-hover:underline justify-center sm:justify-start">
-                Continue lendo o guia completo &rarr;
+            <div class="mt-4 pt-4 border-t border-gray-100 text-left">
+              <span class="text-[#0055ff] text-[15px] font-semibold group-hover:underline">
+                Continue lendo &rarr;
               </span>
             </div>
           </a>
