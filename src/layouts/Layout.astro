@@ -4,13 +4,17 @@ import { getCollection } from 'astro:content';
 interface Props { title: string; }
 const { title } = Astro.props;
 
-// 🔥 PUXA POSTS CORRETOS (sua pasta guides)
+// COLLECTION CORRETA
 const posts = await getCollection('guides');
 
-// 🔥 ORDENA
+// ORDENAÇÃO
 const orderedPosts = posts.sort(
   (a, b) => a.data.sortOrder - b.data.sortOrder
 );
+
+// PRIMEIROS POSTS
+const firstPosts = orderedPosts.slice(0, 6);
+const restPosts = orderedPosts.slice(6);
 ---
 
 <!doctype html>
@@ -23,7 +27,7 @@ const orderedPosts = posts.sort(
 
 <body class="bg-gray-50 font-sans text-gray-900 flex flex-col min-h-screen">
 
-    <!-- 🔵 HEADER ORIGINAL (mantido completo) -->
+    <!-- HEADER ORIGINAL -->
     <header class="bg-blue-800 text-white shadow-lg sticky top-0 z-50">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <a href="/" class="text-2xl font-black italic tracking-tighter uppercase">
@@ -40,42 +44,42 @@ const orderedPosts = posts.sort(
             </div>
         </div>
 
-        <!-- 🔽 MENU DE ÍCONES (mantido) -->
+        <!-- ÍCONES -->
         <div class="bg-white border-b border-gray-200 overflow-x-auto shadow-sm">
             <div class="container mx-auto flex justify-between md:justify-center p-3 gap-6 md:gap-12 min-w-[600px]">
-                <a href="/guia/o-que-fazer" class="flex flex-col items-center">
-                    <span class="text-xl">🎡</span>
-                    <span class="text-[9px] font-extrabold text-gray-500 uppercase">O que Fazer</span>
+                <a href="/guia/o-que-fazer" class="flex flex-col items-center group">
+                    <span class="text-xl group-hover:scale-110 transition">🎡</span>
+                    <span class="text-[9px] font-extrabold text-gray-500 mt-1 uppercase">O que Fazer</span>
                 </a>
-                <a href="/guia/onde-ficar" class="flex flex-col items-center">
-                    <span class="text-xl">🛌</span>
-                    <span class="text-[9px] font-extrabold text-gray-500 uppercase">Onde Ficar</span>
+                <a href="/guia/onde-ficar" class="flex flex-col items-center group">
+                    <span class="text-xl group-hover:scale-110 transition">🛌</span>
+                    <span class="text-[9px] font-extrabold text-gray-500 mt-1 uppercase">Onde Ficar</span>
                 </a>
-                <a href="/guia/onde-comer" class="flex flex-col items-center">
-                    <span class="text-xl">🍽️</span>
-                    <span class="text-[9px] font-extrabold text-gray-500 uppercase">Onde Comer</span>
+                <a href="/guia/onde-comer" class="flex flex-col items-center group">
+                    <span class="text-xl group-hover:scale-110 transition">🍽️</span>
+                    <span class="text-[9px] font-extrabold text-gray-500 mt-1 uppercase">Onde Comer</span>
                 </a>
-                <a href="/guia/como-chegar" class="flex flex-col items-center">
-                    <span class="text-xl">🚗</span>
-                    <span class="text-[9px] font-extrabold text-gray-500 uppercase">Como Chegar</span>
+                <a href="/guia/como-chegar" class="flex flex-col items-center group">
+                    <span class="text-xl group-hover:scale-110 transition">🚗</span>
+                    <span class="text-[9px] font-extrabold text-gray-500 mt-1 uppercase">Como Chegar</span>
                 </a>
-                <a href="/guia/roteiros" class="flex flex-col items-center">
-                    <span class="text-xl">🗺️</span>
-                    <span class="text-[9px] font-extrabold text-gray-500 uppercase">Roteiros</span>
+                <a href="/guia/roteiros" class="flex flex-col items-center group">
+                    <span class="text-xl group-hover:scale-110 transition">🗺️</span>
+                    <span class="text-[9px] font-extrabold text-gray-500 mt-1 uppercase">Roteiros</span>
                 </a>
-                <a href="/guia/natal-luz" class="flex flex-col items-center">
-                    <span class="text-xl">🎄</span>
-                    <span class="text-[9px] font-extrabold text-red-600 uppercase">Natal Luz</span>
+                <a href="/guia/natal-luz" class="flex flex-col items-center group">
+                    <span class="text-xl group-hover:scale-110 transition">🎄</span>
+                    <span class="text-[9px] font-extrabold text-red-600 mt-1 uppercase">Natal Luz</span>
                 </a>
             </div>
         </div>
     </header>
 
-    <!-- 🔥 CONTEÚDO DO SITE (NÃO ALTERADO) -->
+    <!-- CONTEÚDO -->
     <main class="flex-grow">
         <slot />
 
-        <!-- 🔥 CONTINUAR LENDO (NOVO) -->
+        <!-- 🔥 CONTINUAR LENDO -->
         <section class="container mx-auto px-4 mt-16">
 
             <div class="bg-white p-6 rounded-xl shadow mb-8 text-center">
@@ -84,30 +88,69 @@ const orderedPosts = posts.sort(
                 </h2>
             </div>
 
-            <div id="posts-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"></div>
+            <!-- GRID -->
+            <div id="posts-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+                {firstPosts.map((post) => (
+                    <a href={`/guia/${post.slug}/`} class="block group">
+
+                        <div class="bg-white rounded-xl overflow-hidden shadow hover:shadow-lg transition">
+
+                            <img
+                              src={post.data.heroImage}
+                              alt={post.data.title}
+                              loading="lazy"
+                              class="w-full h-48 object-cover"
+                            />
+
+                            <div class="p-4">
+                                <h3 class="font-bold text-lg mb-2 group-hover:text-blue-700">
+                                    {post.data.title}
+                                </h3>
+
+                                <p class="text-sm text-gray-600">
+                                    {post.data.description}
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </a>
+                ))}
+
+            </div>
 
             <div id="loader" class="text-center py-10 text-gray-500">
                 Carregando mais posts...
             </div>
 
         </section>
+
     </main>
 
-    <!-- 🔵 FOOTER ORIGINAL (mantido) -->
+    <!-- FOOTER ORIGINAL -->
     <footer class="bg-gray-900 text-white mt-16 pt-16 pb-8">
         <div class="container mx-auto px-4">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <h4 class="text-xl font-black italic uppercase">GUIA <span class="text-yellow-400">SERRAS</span></h4>
+                </div>
+            </div>
+
             <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
                 <p>&copy; 2026 Guia Gramado e Canela. Todos os direitos reservados.</p>
                 <p class="mt-4 md:mt-0">Desenvolvido para viajantes com ❤️</p>
             </div>
+
         </div>
     </footer>
 
-<!-- 🔥 SCRIPT (ROLAGEM INFINITA CORRETA) -->
+<!-- 🔥 SCRIPT CORRIGIDO -->
 <script>
-  const posts = JSON.parse(`${
+  const restPosts = JSON.parse(`${
     JSON.stringify(
-      orderedPosts.map(post => ({
+      restPosts.map(post => ({
         slug: post.slug,
         title: post.data.title,
         description: post.data.description,
@@ -123,11 +166,11 @@ const orderedPosts = posts.sort(
   const loader = document.getElementById('loader');
 
   function loadMore() {
-    const nextPosts = posts.slice(index, index + perLoad);
+    const nextPosts = restPosts.slice(index, index + perLoad);
 
     nextPosts.forEach(post => {
       const card = document.createElement('a');
-      card.href = `/guia/${post.slug}/`;
+      card.href = `/guia/${post.slug}/`; // ✅ CORRETO
       card.className = "block";
 
       card.innerHTML = `
@@ -145,7 +188,7 @@ const orderedPosts = posts.sort(
 
     index += perLoad;
 
-    if (index >= posts.length) {
+    if (index >= restPosts.length) {
       loader.innerText = "Fim dos posts";
       window.removeEventListener('scroll', handleScroll);
     }
@@ -158,9 +201,6 @@ const orderedPosts = posts.sort(
   }
 
   window.addEventListener('scroll', handleScroll);
-
-  // PRIMEIRA CARGA
-  loadMore();
 </script>
 
 </body>
