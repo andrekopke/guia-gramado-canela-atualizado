@@ -176,24 +176,60 @@ heroImage: post.data.heroImage
 
 let index = 0;
 const perLoad = 6;
-let loading = false;
+let loadCount = 0;
 
 const grid = document.getElementById('posts-grid');
 const loader = document.getElementById('loader');
 
-function loadMore() {
-if (loading) return;
-loading = true;
+function createAffiliateBlock() {
+return `
+<div class="col-span-1 sm:col-span-2 md:col-span-3">
+  <div class="bg-yellow-50 border border-yellow-200 rounded-xl p-6 text-center shadow">
 
+    <h3 class="text-lg font-bold mb-3">
+      ✈️ Planeje sua viagem com desconto
+    </h3>
+
+    <div class="flex flex-wrap justify-center gap-3 text-sm">
+
+      <a href="/guia/passagens" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+        Passagens
+      </a>
+
+      <a href="/guia/hoteis" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">
+        Hotéis
+      </a>
+
+      <a href="/guia/seguro-viagem" class="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700">
+        Seguro
+      </a>
+
+      <a href="/guia/aluguel-carros" class="bg-gray-700 text-white px-4 py-2 rounded hover:bg-black">
+        Aluguel de Carros
+      </a>
+
+      <a href="/descontos" class="bg-yellow-500 text-black px-4 py-2 rounded hover:bg-yellow-400 font-bold">
+        Cupons
+      </a>
+
+    </div>
+
+  </div>
+</div>
+`;
+}
+
+function loadMore() {
 const nextPosts = restPosts.slice(index, index + perLoad);
 
 nextPosts.forEach(post => {
 const card = document.createElement('a');
 card.href = `/guia/${post.slug}/`;
+card.className = "block";
 
 card.innerHTML = `
 <div class="bg-white rounded-xl overflow-hidden shadow hover:shadow-lg transition">
-<img src="${post.heroImage}" class="w-full h-48 object-cover" loading="lazy" decoding="async"/>
+<img src="${post.heroImage}" class="w-full h-48 object-cover" loading="lazy"/>
 <div class="p-4">
 <h3 class="font-bold text-lg mb-2">${post.title}</h3>
 <p class="text-sm text-gray-600">${post.description}</p>
@@ -205,7 +241,14 @@ grid.appendChild(card);
 });
 
 index += perLoad;
-loading = false;
+loadCount++;
+
+// 🔥 INSERE BLOCO DE MONETIZAÇÃO A CADA 2 CARGAS
+if (loadCount % 2 === 0) {
+const affiliate = document.createElement('div');
+affiliate.innerHTML = createAffiliateBlock();
+grid.appendChild(affiliate);
+}
 
 if (index >= restPosts.length) {
 loader.innerText = "Fim dos posts";
@@ -214,7 +257,7 @@ window.removeEventListener('scroll', handleScroll);
 }
 
 function handleScroll() {
-if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 400) {
+if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 300) {
 loadMore();
 }
 }
