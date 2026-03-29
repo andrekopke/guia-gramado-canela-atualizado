@@ -20,6 +20,12 @@ const restPosts = orderedPosts.slice(6);
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title} | Guia Gramado e Canela</title>
+
+    <!-- SEO BÁSICO -->
+    <meta name="description" content="Guia completo de Gramado e Canela com dicas atualizadas de viagem." />
+
+    <!-- PERFORMANCE -->
+    <link rel="preconnect" href="https://images.unsplash.com">
 </head>
 
 <body class="bg-gray-50 font-sans text-gray-900 flex flex-col min-h-screen">
@@ -42,12 +48,30 @@ const restPosts = orderedPosts.slice(6);
 
     <div class="bg-white border-b border-gray-200 overflow-x-auto shadow-sm">
         <div class="container mx-auto flex justify-between md:justify-center p-3 gap-6 md:gap-12 min-w-[600px]">
-            <a href="/guia/o-que-fazer" class="flex flex-col items-center"><span class="text-xl">🎡</span><span class="text-[9px] font-extrabold text-gray-500 mt-1 uppercase">O que Fazer</span></a>
-            <a href="/guia/onde-ficar" class="flex flex-col items-center"><span class="text-xl">🛌</span><span class="text-[9px] font-extrabold text-gray-500 mt-1 uppercase">Onde Ficar</span></a>
-            <a href="/guia/onde-comer" class="flex flex-col items-center"><span class="text-xl">🍽️</span><span class="text-[9px] font-extrabold text-gray-500 mt-1 uppercase">Onde Comer</span></a>
-            <a href="/guia/como-chegar" class="flex flex-col items-center"><span class="text-xl">🚗</span><span class="text-[9px] font-extrabold text-gray-500 mt-1 uppercase">Como Chegar</span></a>
-            <a href="/guia/roteiros" class="flex flex-col items-center"><span class="text-xl">🗺️</span><span class="text-[9px] font-extrabold text-gray-500 mt-1 uppercase">Roteiros</span></a>
-            <a href="/guia/natal-luz" class="flex flex-col items-center"><span class="text-xl">🎄</span><span class="text-[9px] font-extrabold text-red-600 mt-1 uppercase">Natal Luz</span></a>
+            <a href="/guia/o-que-fazer" class="flex flex-col items-center">
+                <span class="text-xl">🎡</span>
+                <span class="text-[9px] font-extrabold text-gray-500 mt-1 uppercase">O que Fazer</span>
+            </a>
+            <a href="/guia/onde-ficar" class="flex flex-col items-center">
+                <span class="text-xl">🛌</span>
+                <span class="text-[9px] font-extrabold text-gray-500 mt-1 uppercase">Onde Ficar</span>
+            </a>
+            <a href="/guia/onde-comer" class="flex flex-col items-center">
+                <span class="text-xl">🍽️</span>
+                <span class="text-[9px] font-extrabold text-gray-500 mt-1 uppercase">Onde Comer</span>
+            </a>
+            <a href="/guia/como-chegar" class="flex flex-col items-center">
+                <span class="text-xl">🚗</span>
+                <span class="text-[9px] font-extrabold text-gray-500 mt-1 uppercase">Como Chegar</span>
+            </a>
+            <a href="/guia/roteiros" class="flex flex-col items-center">
+                <span class="text-xl">🗺️</span>
+                <span class="text-[9px] font-extrabold text-gray-500 mt-1 uppercase">Roteiros</span>
+            </a>
+            <a href="/guia/natal-luz" class="flex flex-col items-center">
+                <span class="text-xl">🎄</span>
+                <span class="text-[9px] font-extrabold text-red-600 mt-1 uppercase">Natal Luz</span>
+            </a>
         </div>
     </div>
 </header>
@@ -55,6 +79,7 @@ const restPosts = orderedPosts.slice(6);
 <main class="flex-grow">
     <slot />
 
+    <!-- CONTINUAR LENDO -->
     <section class="container mx-auto px-4 mt-16">
 
         <div class="bg-white p-6 rounded-xl shadow mb-8 text-center">
@@ -66,19 +91,20 @@ const restPosts = orderedPosts.slice(6);
         <div id="posts-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
 
             {firstPosts.map((post) => (
-                <a href={`/guia/${post.slug}/`} class="block group">
+                <a href={`/guia/${post.slug}/`} class="block">
 
-                    <div class="bg-white rounded-xl overflow-hidden shadow hover:shadow-xl transition duration-300 group-hover:-translate-y-1">
+                    <div class="bg-white rounded-xl overflow-hidden shadow hover:shadow-lg transition">
 
                         <img
                           src={post.data.heroImage}
                           alt={post.data.title}
                           loading="lazy"
+                          decoding="async"
                           class="w-full h-48 object-cover"
                         />
 
                         <div class="p-4">
-                            <h3 class="font-bold text-lg mb-2 group-hover:text-blue-700 transition">
+                            <h3 class="font-bold text-lg mb-2">
                                 {post.data.title}
                             </h3>
 
@@ -93,9 +119,6 @@ const restPosts = orderedPosts.slice(6);
             ))}
 
         </div>
-
-        <!-- 🔥 OBSERVER -->
-        <div id="sentinel" class="h-10"></div>
 
         <div id="loader" class="text-center py-10 text-gray-500">
             Carregando mais posts...
@@ -138,6 +161,7 @@ const restPosts = orderedPosts.slice(6);
     </div>
 </footer>
 
+<!-- INFINITE SCROLL PROFISSIONAL -->
 <script>
 const restPosts = JSON.parse(`${
 JSON.stringify(
@@ -152,26 +176,26 @@ heroImage: post.data.heroImage
 
 let index = 0;
 const perLoad = 6;
+let loading = false;
 
 const grid = document.getElementById('posts-grid');
 const loader = document.getElementById('loader');
-const sentinel = document.getElementById('sentinel');
 
 function loadMore() {
-if (index >= restPosts.length) return;
+if (loading) return;
+loading = true;
 
 const nextPosts = restPosts.slice(index, index + perLoad);
 
 nextPosts.forEach(post => {
 const card = document.createElement('a');
 card.href = `/guia/${post.slug}/`;
-card.className = "block group";
 
 card.innerHTML = `
-<div class="bg-white rounded-xl overflow-hidden shadow hover:shadow-xl transition duration-300 group-hover:-translate-y-1">
-<img src="${post.heroImage}" class="w-full h-48 object-cover" loading="lazy"/>
+<div class="bg-white rounded-xl overflow-hidden shadow hover:shadow-lg transition">
+<img src="${post.heroImage}" class="w-full h-48 object-cover" loading="lazy" decoding="async"/>
 <div class="p-4">
-<h3 class="font-bold text-lg mb-2 group-hover:text-blue-700">${post.title}</h3>
+<h3 class="font-bold text-lg mb-2">${post.title}</h3>
 <p class="text-sm text-gray-600">${post.description}</p>
 </div>
 </div>
@@ -181,28 +205,21 @@ grid.appendChild(card);
 });
 
 index += perLoad;
+loading = false;
 
 if (index >= restPosts.length) {
 loader.innerText = "Fim dos posts";
-observer.disconnect();
+window.removeEventListener('scroll', handleScroll);
 }
 }
 
-// 🔥 OBSERVER (PROFISSIONAL)
-const observer = new IntersectionObserver(entries => {
-if (entries[0].isIntersecting) {
+function handleScroll() {
+if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 400) {
 loadMore();
 }
-}, { rootMargin: "200px" });
-
-observer.observe(sentinel);
-
-// 🔥 FALLBACK (caso browser antigo)
-window.addEventListener('scroll', () => {
-if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 200) {
-loadMore();
 }
-});
+
+window.addEventListener('scroll', handleScroll);
 </script>
 
 </body>
