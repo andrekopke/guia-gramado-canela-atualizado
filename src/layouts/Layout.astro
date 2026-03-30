@@ -78,48 +78,45 @@ const restPosts = orderedPosts.slice(6);
 
 <main class="flex-grow">
     <slot />
-<!-- 🔥 BLOCO AFILIADOS TOPO (ALTA CONVERSÃO) -->
-<section class="container mx-auto px-4 mt-8">
 
-  <div class="bg-white rounded-2xl shadow-lg p-6 border border-gray-100">
+<!-- 🔥 BARRA FIXA MOBILE OTIMIZADA -->
+<div class="fixed bottom-0 left-0 w-full bg-white border-t shadow-lg z-50 md:hidden">
 
-    <h2 class="text-xl md:text-2xl font-bold mb-2">
-      Garanta sua viagem com os melhores preços
-    </h2>
+  <div class="grid grid-cols-5 text-center text-[10px] font-bold">
 
-    <p class="text-gray-600 mb-6">
-      Compare hotéis, passagens e alugue carro com segurança — sem pagar mais caro por isso.
-    </p>
+    <a href="SEU_LINK_BOOKING" target="_blank"
+       class="py-2 text-blue-600">
+       🏨
+       <div>Hotéis</div>
+    </a>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+    <a href="SEU_LINK_PASSAGENS" target="_blank"
+       class="py-2 text-orange-500">
+       ✈️
+       <div>Passagens</div>
+    </a>
 
-      <!-- HOTÉIS -->
-      <a href="SEU_LINK_BOOKING" target="_blank"
-         class="bg-blue-600 text-white p-5 rounded-xl hover:bg-blue-700 transition text-center">
-        <div class="text-2xl mb-2">🏨</div>
-        <div class="font-bold">Ver Hotéis</div>
-        <div class="text-xs mt-1 opacity-80">Melhor preço garantido</div>
-      </a>
+    <a href="SEU_LINK_CARROS" target="_blank"
+       class="py-2 text-gray-800">
+       🚗
+       <div>Carros</div>
+    </a>
 
-      <!-- PASSAGENS -->
-      <a href="SEU_LINK_PASSAGENS" target="_blank"
-         class="bg-orange-500 text-white p-5 rounded-xl hover:bg-orange-600 transition text-center">
-        <div class="text-2xl mb-2">✈️</div>
-        <div class="font-bold">Passagens Aéreas</div>
-        <div class="text-xs mt-1 opacity-80">Promoções atualizadas</div>
-      </a>
+    <a href="SEU_LINK_INGRESSOS" target="_blank"
+       class="py-2 text-purple-600">
+       🎟️
+       <div>Ingressos</div>
+    </a>
 
-      <!-- CARROS -->
-      <a href="SEU_LINK_CARROS" target="_blank"
-         class="bg-gray-800 text-white p-5 rounded-xl hover:bg-black transition text-center">
-        <div class="text-2xl mb-2">🚗</div>
-        <div class="font-bold">Alugar Carro</div>
-        <div class="text-xs mt-1 opacity-80">Retire no aeroporto</div>
-      </a>
-
-    </div>
+    <a href="SEU_LINK_SEGURO" target="_blank"
+       class="py-2 text-green-600">
+       🛡️
+       <div>Seguro</div>
+    </a>
 
   </div>
+
+</div>
 
 </section>
 
