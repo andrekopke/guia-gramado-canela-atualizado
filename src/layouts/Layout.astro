@@ -8,7 +8,7 @@ const posts = await getCollection('guides');
 
 const orderedPosts = posts.sort(
   (a, b) => a.data.sortOrder - b.data.sortOrder
-) 
+);
 
 const firstPosts = orderedPosts.slice(0, 6);
 const restPosts = orderedPosts.slice(6);
@@ -21,53 +21,210 @@ const restPosts = orderedPosts.slice(6);
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title} | Guia Gramado Canela</title>
 
+    <!-- SEO BÁSICO -->
     <meta name="description" content="Guia completo de Gramado e Canela com dicas atualizadas de viagem." />
+
+    <!-- PERFORMANCE -->
     <link rel="preconnect" href="https://images.unsplash.com">
 </head>
 
 <body class="bg-gray-50 font-sans text-gray-900 flex flex-col min-h-screen">
 
 <header class="bg-blue-800 text-white shadow-lg sticky top-0 z-50">
-    <!-- (SEU HEADER 100% INTACTO) -->
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+        <a href="/" class="text-2xl font-black italic tracking-tighter uppercase">
+            GUIA <span class="text-yellow-400 font-extrabold">GRAMADO CANELA</span>
+        </a>
+
+        <div class="hidden lg:flex space-x-5 text-[11px] font-bold uppercase tracking-wide">
+            <a href="/guia/passagens" class="hover:text-yellow-400">✈️ Passagens</a>
+            <a href="/guia/hoteis" class="hover:text-yellow-300">🏨 Hotéis</a>
+            <a href="/guia/pacotes" class="hover:text-yellow-300">📦 Pacotes</a>
+            <a href="/guia/seguro-viagem" class="hover:text-yellow-300">🛡️ Seguro</a>
+            <a href="/guia/aluguel-carros" class="hover:text-yellow-300">🚗 Carros</a>
+            <a href="/descontos" class="bg-yellow-500 text-blue-900 px-3 py-1 rounded-full hover:bg-yellow-400 transition-colors">🎟️ Cupons</a>
+        </div>
+    </div>
+
+    <div class="bg-white border-b border-gray-200 overflow-x-auto shadow-sm">
+        <div class="container mx-auto flex justify-between md:justify-center p-3 gap-6 md:gap-12 min-w-[600px]">
+            <a href="/guia/o-que-fazer" class="flex flex-col items-center">
+                <span class="text-xl">🎡</span>
+                <span class="text-[9px] font-extrabold text-gray-500 mt-1 uppercase">O que Fazer</span>
+            </a>
+            <a href="/guia/onde-ficar" class="flex flex-col items-center">
+                <span class="text-xl">🛌</span>
+                <span class="text-[9px] font-extrabold text-gray-500 mt-1 uppercase">Onde Ficar</span>
+            </a>
+            <a href="/guia/onde-comer" class="flex flex-col items-center">
+                <span class="text-xl">🍽️</span>
+                <span class="text-[9px] font-extrabold text-gray-500 mt-1 uppercase">Onde Comer</span>
+            </a>
+            <a href="/guia/como-chegar" class="flex flex-col items-center">
+                <span class="text-xl">🚗</span>
+                <span class="text-[9px] font-extrabold text-gray-500 mt-1 uppercase">Como Chegar</span>
+            </a>
+            <a href="/guia/roteiros" class="flex flex-col items-center">
+                <span class="text-xl">🗺️</span>
+                <span class="text-[9px] font-extrabold text-gray-500 mt-1 uppercase">Roteiros</span>
+            </a>
+            <a href="/guia/natal-luz" class="flex flex-col items-center">
+                <span class="text-xl">🎄</span>
+                <span class="text-[9px] font-extrabold text-red-600 mt-1 uppercase">Natal Luz</span>
+            </a>
+        </div>
+    </div>
 </header>
 
 <main class="flex-grow">
     <slot />
-
-<!-- 🔥 BLOCO AFILIADOS (SEU ORIGINAL) -->
+<!-- 🔥 BLOCO AFILIADOS TOPO (ALTA CONVERSÃO) -->
 <section class="container mx-auto px-4 mt-8">
+
   <div class="bg-white rounded-2xl shadow-lg p-6 border border-gray-100">
+
     <h2 class="text-xl md:text-2xl font-bold mb-2">
       Garanta sua viagem com os melhores preços
     </h2>
+
     <p class="text-gray-600 mb-6">
       Compare hotéis, passagens e alugue carro com segurança — sem pagar mais caro por isso.
     </p>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
 
+      <!-- HOTÉIS -->
       <a href="SEU_LINK_BOOKING" target="_blank"
-         class="bg-blue-600 text-white p-5 rounded-xl text-center">
-        🏨 <div class="font-bold">Hotéis</div>
+         class="bg-blue-600 text-white p-5 rounded-xl hover:bg-blue-700 transition text-center">
+        <div class="text-2xl mb-2">🏨</div>
+        <div class="font-bold">Ver Hotéis</div>
+        <div class="text-xs mt-1 opacity-80">Melhor preço garantido</div>
       </a>
 
+      <!-- PASSAGENS -->
       <a href="SEU_LINK_PASSAGENS" target="_blank"
-         class="bg-orange-500 text-white p-5 rounded-xl text-center">
-        ✈️ <div class="font-bold">Passagens</div>
+         class="bg-orange-500 text-white p-5 rounded-xl hover:bg-orange-600 transition text-center">
+        <div class="text-2xl mb-2">✈️</div>
+        <div class="font-bold">Passagens Aéreas</div>
+        <div class="text-xs mt-1 opacity-80">Promoções atualizadas</div>
       </a>
 
+      <!-- CARROS -->
       <a href="SEU_LINK_CARROS" target="_blank"
-         class="bg-gray-800 text-white p-5 rounded-xl text-center">
-        🚗 <div class="font-bold">Carros</div>
+         class="bg-gray-800 text-white p-5 rounded-xl hover:bg-black transition text-center">
+        <div class="text-2xl mb-2">🚗</div>
+        <div class="font-bold">Alugar Carro</div>
+        <div class="text-xs mt-1 opacity-80">Retire no aeroporto</div>
       </a>
 
     </div>
+
   </div>
+
 </section>
+
+<!-- 🔥 BLOCO CONFIANÇA -->
+<section class="container mx-auto px-4 mt-12">
+
+  <div class="bg-yellow-50 border border-yellow-200 rounded-xl p-6 text-center">
+
+    <h3 class="text-lg font-bold mb-2">
+      Evite prejuízo na sua viagem
+    </h3>
+
+    <p class="text-gray-700 mb-4 text-sm">
+      Seguro viagem é obrigatório em muitos destinos e pode te salvar de gastos altos.
+    </p>
+
+    <a href="SEU_LINK_SEGURO" target="_blank"
+       class="inline-block bg-yellow-500 text-black font-bold px-6 py-3 rounded-full hover:bg-yellow-400 transition">
+       Comparar Seguro Viagem
+    </a>
+
+  </div>
+
+</section>
+
+    <!-- CONTINUAR LENDO -->
+    <section class="container mx-auto px-4 mt-16">
+
+        <div class="bg-white p-6 rounded-xl shadow mb-8 text-center">
+            <h2 class="text-xl md:text-2xl font-bold">
+                Veja mais dicas especiais nos posts abaixo
+            </h2>
+        </div>
+
+        <div id="posts-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+            {firstPosts.map((post) => (
+                <a href={`/guia/${post.slug}/`} class="block">
+
+                    <div class="bg-white rounded-xl overflow-hidden shadow hover:shadow-lg transition">
+
+                        <img
+                          src={post.data.heroImage}
+                          alt={post.data.title}
+                          loading="lazy"
+                          decoding="async"
+                          class="w-full h-48 object-cover"
+                        />
+
+                        <div class="p-4">
+                            <h3 class="font-bold text-lg mb-2">
+                                {post.data.title}
+                            </h3>
+
+                            <p class="text-sm text-gray-600">
+                                {post.data.description}
+                            </p>
+                        </div>
+
+                    </div>
+
+                </a>
+            ))}
+
+        </div>
+
+        <div id="loader" class="text-center py-10 text-gray-500">
+            Carregando mais posts...
+        </div>
+
+    </section>
 
 </main>
 
-<!-- 🔥 RODAPÉ COMPLETO (RESTAURADO) -->
+<!-- 🔥 BLOCO FINAL (FINANCEIRO / CARTÕES) -->
+<section class="container mx-auto px-4 mt-16 mb-10">
+
+  <div class="bg-gray-900 text-white rounded-2xl p-8 text-center">
+
+    <h3 class="text-xl font-bold mb-3">
+      Economize em câmbio na sua viagem
+    </h3>
+
+    <p class="text-gray-300 mb-6 text-sm">
+      Use contas internacionais e evite taxas abusivas em cartão de crédito.
+    </p>
+
+    <div class="flex flex-col md:flex-row gap-4 justify-center">
+
+      <a href="SEU_LINK_WISE" target="_blank"
+         class="bg-green-500 text-black px-6 py-3 rounded-full font-bold hover:bg-green-400 transition">
+         Abrir conta Wise
+      </a>
+
+      <a href="SEU_LINK_NOMAD" target="_blank"
+         class="bg-blue-500 px-6 py-3 rounded-full font-bold hover:bg-blue-400 transition">
+         Criar conta Nomad
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
 <footer class="bg-gray-900 text-white mt-16 pt-16 pb-8">
     <div class="container mx-auto px-4">
 
@@ -77,9 +234,6 @@ const restPosts = orderedPosts.slice(6);
                 <h4 class="text-xl font-black italic uppercase">
                     GUIA <span class="text-yellow-400">SERRAS</span>
                 </h4>
-                <p class="text-gray-400 text-sm mt-4">
-                    Seu guia completo para viajar melhor, economizar e aproveitar mais.
-                </p>
             </div>
 
             <div>
@@ -87,69 +241,125 @@ const restPosts = orderedPosts.slice(6);
                     Informações
                 </h5>
                 <ul class="space-y-3 text-sm text-gray-300">
-                    <li><a href="/sobre">Quem Somos</a></li>
-                    <li><a href="/contato">Contato</a></li>
-                    <li><a href="/politica-de-privacidade">Privacidade</a></li>
-                    <li><a href="/termos-de-uso">Termos</a></li>
+                    <li><a href="/sobre" class="hover:text-white transition">Quem Somos</a></li>
+                    <li><a href="/contato" class="hover:text-white transition">Contato / Anuncie</a></li>
+                    <li><a href="/politica-de-privacidade" class="hover:text-white transition">Política de Privacidade</a></li>
+                    <li><a href="/termos-de-uso" class="hover:text-white transition">Termos de Uso</a></li>
                 </ul>
             </div>
 
         </div>
 
-        <div class="border-t border-gray-800 pt-8 text-xs text-gray-500 text-center">
-            © 2026 Guia Gramado Canela
+        <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+            <p>&copy; 2026 Guia Gramado Canela. Todos os direitos reservados.</p>
+            <p class="mt-4 md:mt-0">Desenvolvido para viajantes com ❤️</p>
         </div>
 
     </div>
 </footer>
 
-<!-- 🔥 BARRA FIXA DINÂMICA (ADICIONADA SEM QUEBRAR NADA) -->
-<div class="fixed bottom-0 left-0 w-full bg-white border-t shadow-2xl z-50 md:hidden">
+<!-- INFINITE SCROLL PROFISSIONAL -->
+<script>
+const restPosts = JSON.parse(`${
+JSON.stringify(
+restPosts.map(post => ({
+slug: post.slug,
+title: post.data.title,
+description: post.data.description,
+heroImage: post.data.heroImage
+}))
+)
+}`);
 
-  <div class="grid grid-cols-5 text-center text-[10px] font-bold">
+let index = 0;
+const perLoad = 6;
+let loadCount = 0;
 
-    <a id="btn-hotel" href="SEU_LINK_BOOKING" target="_blank" class="py-2 text-blue-600">
-      🏨 <div>Hotéis</div>
-    </a>
+const grid = document.getElementById('posts-grid');
+const loader = document.getElementById('loader');
 
-    <a id="btn-passagem" href="SEU_LINK_PASSAGENS" target="_blank" class="py-2 text-orange-500">
-      ✈️ <div>Voos</div>
-    </a>
+function createAffiliateBlock() {
+return `
+<div class="col-span-1 sm:col-span-2 md:col-span-3">
+  <div class="bg-yellow-50 border border-yellow-200 rounded-xl p-6 text-center shadow">
 
-    <a id="btn-carro" href="SEU_LINK_CARROS" target="_blank" class="py-2 text-gray-800">
-      🚗 <div>Carros</div>
-    </a>
+    <h3 class="text-lg font-bold mb-3">
+      ✈️ Planeje sua viagem com desconto
+    </h3>
 
-    <a id="btn-ingresso" href="SEU_LINK_INGRESSOS" target="_blank" class="py-2 text-purple-600">
-      🎟️ <div>Ingressos</div>
-    </a>
+    <div class="flex flex-wrap justify-center gap-3 text-sm">
 
-    <a id="btn-seguro" href="SEU_LINK_SEGURO" target="_blank" class="py-2 text-green-600">
-      🛡️ <div>Seguro</div>
-    </a>
+      <a href="/guia/passagens" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+        Passagens
+      </a>
+
+      <a href="/guia/hoteis" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">
+        Hotéis
+      </a>
+
+      <a href="/guia/seguro-viagem" class="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700">
+        Seguro
+      </a>
+
+      <a href="/guia/aluguel-carros" class="bg-gray-700 text-white px-4 py-2 rounded hover:bg-black">
+        Aluguel de Carros
+      </a>
+
+      <a href="/descontos" class="bg-yellow-500 text-black px-4 py-2 rounded hover:bg-yellow-400 font-bold">
+        Cupons
+      </a>
+
+    </div>
 
   </div>
-
 </div>
-
-<!-- espaço para não cobrir conteúdo -->
-<div class="h-20 md:hidden"></div>
-
-<!-- 🔥 SCRIPT INTELIGENTE (DINÂMICO POR PÁGINA) -->
-<script>
-const url = window.location.pathname;
-
-if (url.includes("onde-ficar")) {
-  document.getElementById("btn-hotel").style.transform = "scale(1.1)";
+`;
 }
 
-if (url.includes("como-chegar")) {
-  document.getElementById("btn-passagem").style.transform = "scale(1.1)";
+function loadMore() {
+const nextPosts = restPosts.slice(index, index + perLoad);
+
+nextPosts.forEach(post => {
+const card = document.createElement('a');
+card.href = `/guia/${post.slug}/`;
+card.className = "block";
+
+card.innerHTML = `
+<div class="bg-white rounded-xl overflow-hidden shadow hover:shadow-lg transition">
+<img src="${post.heroImage}" class="w-full h-48 object-cover" loading="lazy"/>
+<div class="p-4">
+<h3 class="font-bold text-lg mb-2">${post.title}</h3>
+<p class="text-sm text-gray-600">${post.description}</p>
+</div>
+</div>
+`;
+
+grid.appendChild(card);
+});
+
+index += perLoad;
+loadCount++;
+
+// 🔥 INSERE BLOCO DE MONETIZAÇÃO A CADA 2 CARGAS
+if (loadCount % 2 === 0) {
+const affiliate = document.createElement('div');
+affiliate.innerHTML = createAffiliateBlock();
+grid.appendChild(affiliate);
 }
 
-if (url.includes("o-que-fazer")) {
-  document.getElementById("btn-ingresso").style.transform = "scale(1.1)";
+if (index >= restPosts.length) {
+loader.innerText = "Fim dos posts";
+window.removeEventListener('scroll', handleScroll);
 }
+}
+
+function handleScroll() {
+if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 300) {
+loadMore();
+}
+}
+
+window.addEventListener('scroll', handleScroll);
 </script>
 
 </body>
