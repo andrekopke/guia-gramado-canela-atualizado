@@ -12,6 +12,14 @@ const orderedPosts = posts.sort(
 
 const firstPosts = orderedPosts.slice(0, 6);
 const restPosts = orderedPosts.slice(6);
+
+// 🔥 DETECTA CONTEXTO DA PÁGINA
+const pageTitle = title?.toLowerCase() || '';
+
+let destino = 'gramado';
+
+if (pageTitle.includes('canela')) destino = 'canela';
+if (pageTitle.includes('natal luz')) destino = 'natal luz gramado';
 ---
 
 <!doctype html>
@@ -21,11 +29,7 @@ const restPosts = orderedPosts.slice(6);
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title} | Guia Gramado Canela</title>
 
-    <!-- SEO BÁSICO -->
     <meta name="description" content="Guia completo de Gramado e Canela com dicas atualizadas de viagem." />
-
-    <!-- PERFORMANCE -->
-    <link rel="preconnect" href="https://images.unsplash.com">
 </head>
 
 <body class="bg-gray-50 font-sans text-gray-900 flex flex-col min-h-screen">
@@ -35,111 +39,11 @@ const restPosts = orderedPosts.slice(6);
         <a href="/" class="text-2xl font-black italic tracking-tighter uppercase">
             GUIA <span class="text-yellow-400 font-extrabold">GRAMADO CANELA</span>
         </a>
-
-        <div class="hidden lg:flex space-x-5 text-[11px] font-bold uppercase tracking-wide">
-            <a href="/guia/passagens" class="hover:text-yellow-400">✈️ Passagens</a>
-            <a href="/guia/hoteis" class="hover:text-yellow-300">🏨 Hotéis</a>
-            <a href="/guia/pacotes" class="hover:text-yellow-300">📦 Pacotes</a>
-            <a href="/guia/seguro-viagem" class="hover:text-yellow-300">🛡️ Seguro</a>
-            <a href="/guia/aluguel-carros" class="hover:text-yellow-300">🚗 Carros</a>
-            <a href="/descontos" class="bg-yellow-500 text-blue-900 px-3 py-1 rounded-full hover:bg-yellow-400 transition-colors">🎟️ Cupons</a>
-        </div>
-    </div>
-
-    <div class="bg-white border-b border-gray-200 overflow-x-auto shadow-sm">
-        <div class="container mx-auto flex justify-between md:justify-center p-3 gap-6 md:gap-12 min-w-[600px]">
-            <a href="/guia/o-que-fazer" class="flex flex-col items-center">
-                <span class="text-xl">🎡</span>
-                <span class="text-[9px] font-extrabold text-gray-500 mt-1 uppercase">O que Fazer</span>
-            </a>
-            <a href="/guia/onde-ficar" class="flex flex-col items-center">
-                <span class="text-xl">🛌</span>
-                <span class="text-[9px] font-extrabold text-gray-500 mt-1 uppercase">Onde Ficar</span>
-            </a>
-            <a href="/guia/onde-comer" class="flex flex-col items-center">
-                <span class="text-xl">🍽️</span>
-                <span class="text-[9px] font-extrabold text-gray-500 mt-1 uppercase">Onde Comer</span>
-            </a>
-            <a href="/guia/como-chegar" class="flex flex-col items-center">
-                <span class="text-xl">🚗</span>
-                <span class="text-[9px] font-extrabold text-gray-500 mt-1 uppercase">Como Chegar</span>
-            </a>
-            <a href="/guia/roteiros" class="flex flex-col items-center">
-                <span class="text-xl">🗺️</span>
-                <span class="text-[9px] font-extrabold text-gray-500 mt-1 uppercase">Roteiros</span>
-            </a>
-            <a href="/guia/natal-luz" class="flex flex-col items-center">
-                <span class="text-xl">🎄</span>
-                <span class="text-[9px] font-extrabold text-red-600 mt-1 uppercase">Natal Luz</span>
-            </a>
-        </div>
     </div>
 </header>
 
-<main class="flex-grow">
+<main class="flex-grow pb-24">
     <slot />
-<!-- 🔥 BARRA FIXA MOBILE OTIMIZADA -->
-<div class="fixed bottom-0 left-0 w-full bg-white border-t shadow-lg z-50 md:hidden">
-
-  <div class="grid grid-cols-5 text-center text-[10px] font-bold">
-
-    <a href="SEU_LINK_BOOKING" target="_blank"
-       class="py-2 text-blue-600">
-       🏨
-       <div>Hotéis</div>
-    </a>
-
-    <a href="SEU_LINK_PASSAGENS" target="_blank"
-       class="py-2 text-orange-500">
-       ✈️
-       <div>Passagens</div>
-    </a>
-
-    <a href="SEU_LINK_CARROS" target="_blank"
-       class="py-2 text-gray-800">
-       🚗
-       <div>Carros</div>
-    </a>
-
-    <a href="SEU_LINK_INGRESSOS" target="_blank"
-       class="py-2 text-purple-600">
-       🎟️
-       <div>Ingressos</div>
-    </a>
-
-    <a href="SEU_LINK_SEGURO" target="_blank"
-       class="py-2 text-green-600">
-       🛡️
-       <div>Seguro</div>
-    </a>
-
-  </div>
-
-</div>
-
-</section>
-
-<!-- 🔥 BLOCO CONFIANÇA -->
-<section class="container mx-auto px-4 mt-12">
-
-  <div class="bg-yellow-50 border border-yellow-200 rounded-xl p-6 text-center">
-
-    <h3 class="text-lg font-bold mb-2">
-      Evite prejuízo na sua viagem
-    </h3>
-
-    <p class="text-gray-700 mb-4 text-sm">
-      Seguro viagem é obrigatório em muitos destinos e pode te salvar de gastos altos.
-    </p>
-
-    <a href="SEU_LINK_SEGURO" target="_blank"
-       class="inline-block bg-yellow-500 text-black font-bold px-6 py-3 rounded-full hover:bg-yellow-400 transition">
-       Comparar Seguro Viagem
-    </a>
-
-  </div>
-
-</section>
 
     <!-- CONTINUAR LENDO -->
     <section class="container mx-auto px-4 mt-16">
@@ -161,7 +65,6 @@ const restPosts = orderedPosts.slice(6);
                           src={post.data.heroImage}
                           alt={post.data.title}
                           loading="lazy"
-                          decoding="async"
                           class="w-full h-48 object-cover"
                         />
 
@@ -190,61 +93,47 @@ const restPosts = orderedPosts.slice(6);
 
 </main>
 
-<!-- 🔥 BLOCO FINAL (FINANCEIRO / CARTÕES) -->
-<section class="container mx-auto px-4 mt-16 mb-10">
+<!-- 🔥 BARRA INTELIGENTE -->
+<div class="fixed bottom-0 left-0 w-full bg-white border-t shadow-lg z-50 md:hidden">
 
-  <div class="bg-gray-900 text-white rounded-2xl p-8 text-center">
+  <div class="grid grid-cols-5 text-center text-[10px] font-bold">
 
-    <h3 class="text-xl font-bold mb-3">
-      Economize em câmbio na sua viagem
-    </h3>
+    <a href={`SEU_LINK_BOOKING?destino=${destino}`} target="_blank"
+       class="py-2 text-blue-600">
+       🏨
+       <div>Hotéis em {destino}</div>
+    </a>
 
-    <p class="text-gray-300 mb-6 text-sm">
-      Use contas internacionais e evite taxas abusivas em cartão de crédito.
-    </p>
+    <a href={`SEU_LINK_PASSAGENS?para=${destino}`} target="_blank"
+       class="py-2 text-orange-500">
+       ✈️
+       <div>Voos baratos</div>
+    </a>
 
-    <div class="flex flex-col md:flex-row gap-4 justify-center">
+    <a href="SEU_LINK_CARROS" target="_blank"
+       class="py-2 text-gray-800">
+       🚗
+       <div>Alugar carro</div>
+    </a>
 
-      <a href="SEU_LINK_WISE" target="_blank"
-         class="bg-green-500 text-black px-6 py-3 rounded-full font-bold hover:bg-green-400 transition">
-         Abrir conta Wise
-      </a>
+    <a href={`SEU_LINK_INGRESSOS?local=${destino}`} target="_blank"
+       class="py-2 text-purple-600">
+       🎟️
+       <div>Ingressos</div>
+    </a>
 
-      <a href="SEU_LINK_NOMAD" target="_blank"
-         class="bg-blue-500 px-6 py-3 rounded-full font-bold hover:bg-blue-400 transition">
-         Criar conta Nomad
-      </a>
-
-    </div>
+    <a href="SEU_LINK_SEGURO" target="_blank"
+       class="py-2 text-green-600">
+       🛡️
+       <div>Seguro viagem</div>
+    </a>
 
   </div>
 
-</section>
+</div>
 
 <footer class="bg-gray-900 text-white mt-16 pt-16 pb-8">
     <div class="container mx-auto px-4">
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-
-            <div>
-                <h4 class="text-xl font-black italic uppercase">
-                    GUIA <span class="text-yellow-400">SERRAS</span>
-                </h4>
-            </div>
-
-            <div>
-                <h5 class="text-sm font-bold uppercase tracking-widest text-yellow-400 mb-6">
-                    Informações
-                </h5>
-                <ul class="space-y-3 text-sm text-gray-300">
-                    <li><a href="/sobre" class="hover:text-white transition">Quem Somos</a></li>
-                    <li><a href="/contato" class="hover:text-white transition">Contato / Anuncie</a></li>
-                    <li><a href="/politica-de-privacidade" class="hover:text-white transition">Política de Privacidade</a></li>
-                    <li><a href="/termos-de-uso" class="hover:text-white transition">Termos de Uso</a></li>
-                </ul>
-            </div>
-
-        </div>
 
         <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
             <p>&copy; 2026 Guia Gramado Canela. Todos os direitos reservados.</p>
@@ -254,7 +143,7 @@ const restPosts = orderedPosts.slice(6);
     </div>
 </footer>
 
-<!-- INFINITE SCROLL PROFISSIONAL -->
+<!-- INFINITE SCROLL -->
 <script>
 const restPosts = JSON.parse(`${
 JSON.stringify(
@@ -269,48 +158,9 @@ heroImage: post.data.heroImage
 
 let index = 0;
 const perLoad = 6;
-let loadCount = 0;
 
 const grid = document.getElementById('posts-grid');
 const loader = document.getElementById('loader');
-
-function createAffiliateBlock() {
-return `
-<div class="col-span-1 sm:col-span-2 md:col-span-3">
-  <div class="bg-yellow-50 border border-yellow-200 rounded-xl p-6 text-center shadow">
-
-    <h3 class="text-lg font-bold mb-3">
-      ✈️ Planeje sua viagem com desconto
-    </h3>
-
-    <div class="flex flex-wrap justify-center gap-3 text-sm">
-
-      <a href="/guia/passagens" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
-        Passagens
-      </a>
-
-      <a href="/guia/hoteis" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">
-        Hotéis
-      </a>
-
-      <a href="/guia/seguro-viagem" class="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700">
-        Seguro
-      </a>
-
-      <a href="/guia/aluguel-carros" class="bg-gray-700 text-white px-4 py-2 rounded hover:bg-black">
-        Aluguel de Carros
-      </a>
-
-      <a href="/descontos" class="bg-yellow-500 text-black px-4 py-2 rounded hover:bg-yellow-400 font-bold">
-        Cupons
-      </a>
-
-    </div>
-
-  </div>
-</div>
-`;
-}
 
 function loadMore() {
 const nextPosts = restPosts.slice(index, index + perLoad);
@@ -318,7 +168,6 @@ const nextPosts = restPosts.slice(index, index + perLoad);
 nextPosts.forEach(post => {
 const card = document.createElement('a');
 card.href = `/guia/${post.slug}/`;
-card.className = "block";
 
 card.innerHTML = `
 <div class="bg-white rounded-xl overflow-hidden shadow hover:shadow-lg transition">
@@ -334,14 +183,6 @@ grid.appendChild(card);
 });
 
 index += perLoad;
-loadCount++;
-
-// 🔥 INSERE BLOCO DE MONETIZAÇÃO A CADA 2 CARGAS
-if (loadCount % 2 === 0) {
-const affiliate = document.createElement('div');
-affiliate.innerHTML = createAffiliateBlock();
-grid.appendChild(affiliate);
-}
 
 if (index >= restPosts.length) {
 loader.innerText = "Fim dos posts";
