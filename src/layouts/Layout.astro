@@ -18,14 +18,26 @@ const restPosts = orderedPosts.slice(6);
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{title} | Guia Gramado Canela</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<title>{title} | Guia Gramado Canela</title>
 
-    <!-- SEO BÁSICO -->
-    <meta name="description" content="Guia completo de Gramado e Canela com dicas atualizadas de viagem." />
+		<!-- SEO BÁSICO -->
+		<meta name="description" content="Guia completo de Gramado e Canela com dicas atualizadas de viagem." />
 
-    <!-- PERFORMANCE -->
-    <link rel="preconnect" href="https://images.unsplash.com">
+		<!-- PERFORMANCE -->
+		<link rel="preconnect" href="https://images.unsplash.com">
+
+		<!-- INÍCIO DO GOOGLE ANALYTICS -->
+		<script is:inline async src="https://googletagmanager.com"></script>
+		<script is:inline>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-6HJRZ76F90');
+		</script>
+		<!-- FIM DO GOOGLE ANALYTICS -->
 </head>
 
 <body class="bg-gray-50 font-sans text-gray-900 flex flex-col min-h-screen">
