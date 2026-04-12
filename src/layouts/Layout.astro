@@ -31,32 +31,36 @@ const restPosts = orderedPosts.slice(6);
     <!-- GOOGLE ANALYTICS -->
     <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-6HJRZ76F90"></script>
     
-    <script is:inline>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+<script is:inline> 
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-      gtag('config', 'G-6HJRZ76F90', {
-        page_path: window.location.pathname,
+  gtag('config', 'G-6HJRZ76F90', {
+    page_path: window.location.pathname,
+  });
+</script>
+
+<!-- RASTREAMENTO DE CLIQUES EM AFILIADOS + POR POST -->
+<script is:inline>
+  document.addEventListener("click", function(e) {
+    const link = e.target.closest("a[data-affiliate]");
+    
+    if (link) {
+      const tipo = link.getAttribute("data-affiliate");
+      const path = window.location.pathname;
+
+      gtag('event', 'click_affiliate', {
+        event_category: 'affiliate',
+        event_label: tipo,
+        affiliate_type: tipo,
+        page_path: path,
+        page_location: window.location.href,
+        transport_type: 'beacon'
       });
-    </script>
-
-    <!-- RASTREAMENTO DE CLIQUES EM AFILIADOS -->
-    <script is:inline>
-      document.addEventListener("click", function(e) {
-        const link = e.target.closest("a[data-affiliate]");
-        
-        if (link) {
-          const tipo = link.getAttribute("data-affiliate");
-
-          gtag('event', 'click_affiliate', {
-            event_category: 'affiliate',
-            event_label: tipo,
-            transport_type: 'beacon'
-          });
-        }
-      });
-    </script>
+    }
+  });
+</script>
 
 </head>
 
