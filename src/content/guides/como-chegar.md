@@ -70,4 +70,4 @@ Para circular pelo centro, não. Mas para atrações como o Snowland, parques em
 
 ---
 
-**Já resolveu sua chegada?** Agora é hora de escolher onde você vai descansar. Confira nosso guia atualizado: **[Onde ficar em Gramado e Canela — Melhores Bairros e Hotéis](/guia/onde-ficar)**
+**Já resolveu sua chegada?** Agora é hora de escolher onde você vai descansar. Confira nosso guia atualizado: **[Onde ficar em Gramado e Canela — Melhores Bairros e Hotéis](/https://tidd.ly/41GfYVj)**
