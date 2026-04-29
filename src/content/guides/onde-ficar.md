@@ -36,7 +36,7 @@ Muitos viajantes têm optado por se hospedar em Canela em 2026. A cidade vizinha
 
 ---
 
-> **🏨 Dica de Reserva:** A procura por hotéis na Serra Gaúcha é altíssima. Recomendamos garantir sua reserva com pelo menos 60 dias de antecedência para conseguir as melhores tarifas. **[Confira aqui as ofertas de hoje no Booking.com para Gramado](/parceiros/booking)**.
+> **🏨 Dica de Reserva:** A procura por hotéis na Serra Gaúcha é altíssima. Recomendamos garantir sua reserva com pelo menos 60 dias de antecedência para conseguir as melhores tarifas. **[Confira aqui as ofertas de hoje no Booking.com para Gramado](https://tidd.ly/41GfYVj)**.
 
 ---
 
