@@ -2,17 +2,17 @@
 import Layout from '../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 
-// MÁGICA: Aqui o código busca TODOS os posts da pasta 'guides' automaticamente
+// Busca TODOS os posts da pasta 'guides' automaticamente
 const allGuides = await getCollection('guides');
 
-// Ordena os posts pelo número da 'order' que colocamos no topo de cada arquivo .md
+// Ordena os posts pelo número da 'order' definido no Markdown
 const sortedGuides = allGuides.sort((a, b) => a.data.order - b.data.order);
 ---
 
 <Layout title="Guia de Turismo Gramado e Canela 2026 | Seu Portal Completo na Serra">
   <article class="font-sans antialiased text-[#333]">
 
-    <section class="relative h-[500px] md:h-[650px] flex items-center justify-center text-white overflow-hidden">
+    <section class="relative h-[300px] md:h-[400px] flex items-center justify-center text-white overflow-hidden">
       
       <img 
         src="/portico-gramado.jpg" 
@@ -20,63 +20,63 @@ const sortedGuides = allGuides.sort((a, b) => a.data.order - b.data.order);
         alt="Pórtico de entrada de Gramado" 
       />
       
-      <div class="absolute inset-0 bg-black/50"></div>
+      <div class="absolute inset-0 bg-black/40"></div>
 
-      <div class="relative z-10 text-center px-6 max-w-[900px]">
-        <h1 class="text-[40px] md:text-[72px] font-black mb-4 uppercase italic tracking-tighter leading-none">
+      <div class="relative z-10 text-center px-6 max-w-[800px]">
+        <h1 class="text-[30px] md:text-[54px] font-black mb-3 uppercase italic tracking-tighter leading-tight">
           Gramado e Canela <span class="text-yellow-400 font-extrabold">2026</span>
         </h1>
         
-        <p class="text-lg md:text-2xl mb-10 font-light opacity-90 leading-relaxed max-w-[700px] mx-auto">
-          O guia mais completo e atualizado para planejar sua viagem à Serra Gaúcha com economia e curadoria de excelência.
+        <p class="text-base md:text-xl mb-6 font-light opacity-90 max-w-[600px] mx-auto leading-snug">
+          O guia completo para planejar sua viagem à Serra Gaúcha com economia e inteligência.
         </p>
 
-        <a href="#posts-grid" class="inline-block bg-yellow-500 text-blue-900 px-10 py-4 rounded-full font-black text-lg hover:bg-yellow-400 transition-all hover:scale-105 shadow-2xl uppercase tracking-wider">
-           📍 Começar meu Roteiro
+        <a href="#posts-grid" class="inline-block bg-yellow-500 text-blue-900 px-8 py-3 rounded-full font-black text-sm md:text-base hover:bg-yellow-400 transition-all hover:scale-105 shadow-xl uppercase tracking-wider">
+           📍 Ver Roteiros
         </a>
       </div>
     </section>
 
-    <section class="bg-white py-16 px-6">
+    <section class="bg-white py-12 px-6">
       <div class="max-w-[800px] mx-auto text-center">
-        <h2 class="text-[32px] md:text-[40px] font-extrabold text-black tracking-tight mb-6">
+        <h2 class="text-[28px] md:text-[36px] font-extrabold text-black tracking-tight mb-4">
           A Missão Deste Guia: Facilitar a Sua Viagem
         </h2>
-        <div class="text-[18px] text-gray-800 leading-relaxed space-y-5 text-left md:text-center">
+        <div class="text-[17px] text-gray-800 leading-relaxed space-y-4 text-left md:text-center">
           <p>
-            Olá, apaixonado por viagens. Este portal foi criado pensando exatamente em facilitar a vida dos que amam viajar, oferecendo uma **curadoria de excelência** para a Serra Gaúcha em 2026.
+            Olá, apaixonado por viagens. Este portal foi criado pensando em facilitar a vida dos que amam viajar, oferecendo uma **curadoria de excelência** para a Serra Gaúcha em 2026.
           </p>
         </div>
       </div>
     </section>
 
-    <hr class="border-t border-gray-200" />
+    <hr class="border-t border-gray-100" />
 
-    <section id="posts-grid" class="max-w-[1200px] mx-auto px-6 py-16 bg-[#fafafa]">
+    <section id="posts-grid" class="max-w-[1200px] mx-auto px-6 py-12 bg-[#fafafa]">
       
-      <h2 class="text-[28px] font-extrabold text-[#0055ff] tracking-tight mb-10">
+      <h2 class="text-[24px] font-extrabold text-[#0055ff] tracking-tight mb-8">
         Explore o Nosso Guia Completo
       </h2>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         {sortedGuides.map((guide) => (
           <a href={`/guia/${guide.slug}`} class="block bg-white rounded-2xl shadow-sm border border-gray-100 p-6 hover:shadow-lg hover:border-[#0055ff] transition-all group flex flex-col h-full">
             <div class="flex flex-col sm:flex-row gap-6 items-center sm:items-start flex-grow">
               
-              <img src={guide.data.heroImage} class="w-[140px] h-[140px] rounded-lg shadow-sm border border-gray-100 flex-shrink-0 object-cover" alt={guide.data.title} />
+              <img src={guide.data.heroImage} class="w-[130px] h-[130px] rounded-lg shadow-sm border border-gray-100 flex-shrink-0 object-cover" alt={guide.data.title} />
               
               <div class="flex-1 text-center sm:text-left">
-                <h3 class="text-[20px] font-bold text-black mb-2 tracking-tight group-hover:text-[#0055ff] leading-tight">
+                <h3 class="text-[19px] font-bold text-black mb-2 tracking-tight group-hover:text-[#0055ff] leading-tight">
                   {guide.data.title}
                 </h3>
-                <p class="text-[15px] text-gray-700 leading-relaxed mb-4 line-clamp-3">
-                  {guide.body.substring(0, 160)}...
+                <p class="text-[14px] text-gray-700 leading-relaxed mb-4 line-clamp-3">
+                  {guide.body.substring(0, 150)}...
                 </p>
               </div>
             </div>
             
             <div class="mt-4 pt-4 border-t border-gray-100 text-left">
-              <span class="text-[#0055ff] text-[15px] font-semibold group-hover:underline">
+              <span class="text-[#0055ff] text-[14px] font-semibold group-hover:underline">
                 Continue lendo &rarr;
               </span>
             </div>
