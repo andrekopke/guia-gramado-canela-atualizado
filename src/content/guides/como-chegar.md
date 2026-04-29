@@ -34,7 +34,7 @@ Para quem valoriza liberdade, alugar um carro é a escolha definitiva. Isso perm
 * **Rota Sugerida:** Se tiver tempo, suba pela **Rota Romântica (BR-116)**. O trajeto é ligeiramente mais longo, mas as paisagens repletas de plátanos valem cada foto.
 * **Rota Rápida:** Para quem quer chegar logo, a via por **Taquara (RS-115)** é a mais eficiente e possui asfalto em excelentes condições.
 
-> **💡 Economia no Aluguel:** Reservar o carro com pelo menos 30 dias de antecedência pode reduzir o custo em até 40%. ** Confira aqui as locadoras parceiras com desconto (https://tidd.ly/4sMvcTP).
+  > **💡 Economia no Aluguel:** Reservar o carro com pelo menos 30 dias de antecedência pode reduzir o custo em até 40%. **[Confira aqui as locadoras parceiras com desconto](https://tidd.ly/4sMvcTP).
 
 ---
 
