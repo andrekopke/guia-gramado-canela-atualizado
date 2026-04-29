@@ -12,24 +12,28 @@ const sortedGuides = allGuides.sort((a, b) => a.data.order - b.data.order);
 <Layout title="Guia de Turismo Gramado e Canela 2026 | Seu Portal Completo na Serra">
   <article class="font-sans antialiased text-[#333]">
 
-    <section class="bg-[#eee] py-20 px-6 text-center shadow-inner">
-      <div class="max-w-[1200px] mx-auto bg-white p-6 rounded-2xl shadow-lg border border-gray-100 flex flex-col md:flex-row items-center gap-10">
-        <div class="flex-1 text-center md:text-left">
-          <h1 class="text-[36px] md:text-[48px] font-black leading-[1.2] text-black tracking-tight mb-4">
-            Descubra a Magia das Serras Gaúchas
-          </h1>
-          <p class="text-[18px] text-gray-700 leading-relaxed mb-8 max-w-[600px] mx-auto md:mx-0">
-            Seu portal completo para Gramado, Canela e Serra Gaúcha em 2026. Dicas de roteiros de excelência, melhores preços e cupons exclusivos.
-          </p>
-          
-          <div class="flex flex-col sm:flex-row gap-3 max-w-[500px]">
-             <input type="text" placeholder="O que você procura?" class="px-6 py-3 rounded-full border border-gray-200 w-full outline-none focus:border-[#0055ff]" />
-             <button class="bg-[#ffcc00] text-black px-8 py-3 rounded-full font-bold hover:scale-105 transition-all">Buscar</button>
-          </div>
-        </div>
-        <div class="flex-1">
-          <img src="/portico-gramado.jpg" class="w-full h-auto rounded-xl shadow-sm border border-gray-100" alt="Pórtico de Gramado" />
-        </div>
+    <section class="relative h-[500px] md:h-[650px] flex items-center justify-center text-white overflow-hidden">
+      
+      <img 
+        src="/portico-gramado.jpg" 
+        class="absolute inset-0 w-full h-full object-cover" 
+        alt="Pórtico de entrada de Gramado" 
+      />
+      
+      <div class="absolute inset-0 bg-black/50"></div>
+
+      <div class="relative z-10 text-center px-6 max-w-[900px]">
+        <h1 class="text-[40px] md:text-[72px] font-black mb-4 uppercase italic tracking-tighter leading-none">
+          Gramado e Canela <span class="text-yellow-400 font-extrabold">2026</span>
+        </h1>
+        
+        <p class="text-lg md:text-2xl mb-10 font-light opacity-90 leading-relaxed max-w-[700px] mx-auto">
+          O guia mais completo e atualizado para planejar sua viagem à Serra Gaúcha com economia e curadoria de excelência.
+        </p>
+
+        <a href="#posts-grid" class="inline-block bg-yellow-500 text-blue-900 px-10 py-4 rounded-full font-black text-lg hover:bg-yellow-400 transition-all hover:scale-105 shadow-2xl uppercase tracking-wider">
+           📍 Começar meu Roteiro
+        </a>
       </div>
     </section>
 
@@ -48,7 +52,7 @@ const sortedGuides = allGuides.sort((a, b) => a.data.order - b.data.order);
 
     <hr class="border-t border-gray-200" />
 
-    <section class="max-w-[1200px] mx-auto px-6 py-16 bg-[#fafafa]">
+    <section id="posts-grid" class="max-w-[1200px] mx-auto px-6 py-16 bg-[#fafafa]">
       
       <h2 class="text-[28px] font-extrabold text-[#0055ff] tracking-tight mb-10">
         Explore o Nosso Guia Completo
