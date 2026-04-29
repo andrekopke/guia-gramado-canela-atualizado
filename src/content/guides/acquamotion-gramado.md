@@ -3,7 +3,7 @@ title: "Acquamotion Gramado: O Guia Completo do Parque Termal em 2026"
 order: 7
 destination: "gramado"
 type: "Atração"
-heroImage: "/acquamotion-gramado.jpg"
+heroImage: "/acquamotion-gramado.png"
 rating: 5
 priceRange: 4
 ---
