@@ -2,7 +2,7 @@
 title: "Natal Luz em Gramado: Guia Completo (O que ninguém te conta + dicas essenciais)"
 order: 6
 destination: "gramado"
-type: "guia-completo"
+type: "natal-luz"
 heroImage: "/natal-luz-em-gramado.jpg"
 rating: 5
 priceRange: 4
