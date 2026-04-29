@@ -59,4 +59,4 @@ Sim, a região tornou-se muito *pet-friendly* em 2026. Diversos hotéis no Bairr
 
 ---
 
-**Já escolheu onde vai dormir?** Com o hotel garantido, agora é hora de planejar onde você vai comer as melhores iguarias da Serra: **[Guia Gastronômico: Onde comer bem em Gramado e Canela](/guia/onde-comer)**
+**Já escolheu onde vai dormir?** Com o hotel garantido, agora é hora de planejar onde você vai comer as melhores iguarias da Serra: **[Guia Gastronômico: Onde comer bem em Gramado e Canela](https://parksnet.com.br/destino/serra-gaucha/chaplins-fondue?bookingAgency=5788)**
