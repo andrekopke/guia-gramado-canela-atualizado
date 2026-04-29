@@ -3,7 +3,7 @@ title: "O que fazer em Gramado e Canela: Guia Completo (roteiro essencial + dica
 order: 1
 destination: "gramado"
 type: "guia"
-heroImage: "o-que-fazer-em-gramado-e-canela.jpg"
+heroImage: "/o-que-fazer-em-gramado-e-canela.jpg"
 rating: 5
 priceRange: 3
 ---
