@@ -1,11 +1,11 @@
 ---
 title: "Catedral de Pedra de Canela: Curiosidades e o Espetáculo Gratuito do Natal 2026"
 order: 10
-sortOrder: 10
 destination: "canela"
 type: "Atração"
 heroImage: "/guia-catedral-pedra-canela-2026.jpg"
 rating: 5
+priceRange: 0
 ---
 
 A **Catedral de Pedra**, cujo nome oficial é Paróquia Nossa Senhora de Lourdes, é o maior símbolo de Canela e um dos pontos turísticos mais fotografados de toda a Serra Gaúcha. Imponente e majestosa, ela domina a paisagem do centro da cidade.
