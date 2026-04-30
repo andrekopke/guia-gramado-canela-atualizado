@@ -4,7 +4,7 @@ order: 9
 sortOrder: 9
 destination: "gramado"
 type: "Gastronomia"
-heroImage: "/fondue-gramado-2026.jpg"
+heroImage: "/Tchê-Pierre-Fondue-na-Neve-noite-suiça.jpeg"
 rating: 5
 priceRange: 4
 ---
