@@ -21,7 +21,7 @@ O **Chapilin** é aquele lugar que parece abraçar o visitante. Conhecido por se
 > **Dica de quem vai sempre:** O molho de alho deles é um dos segredos mais bem guardados da casa. Vale a pena experimentar com as carnes na pedra.
 > 
 > <!-- Link de Indicação -->
-> **[Verificar disponibilidade e preços para o Chapilin](COLE_SEU_LINK_CHAPILIN_AQUI)**
+> **[Verificar disponibilidade e preços para o Chapilin](https://parksnet.com.br/destino/serra-gaucha/chaplins-fondue?bookingAgency=5788)**
 
 ### ❄️ Tchê Pierre: Um Mundo Mágico na Neve
 Para quem está com crianças, o **Tchê Pierre** não é apenas um jantar, é um evento. O restaurante é totalmente temático e conta a história do Pierre, um personagem apaixonado pela neve. A experiência é totalmente imersiva: enquanto as famílias saboreiam o fondue, acontecem intervenções artísticas e, o ponto alto para os pequenos, o momento em que "neve" de verdade cai dentro do salão. É uma alegria contagiante ver as crianças interagindo com os personagens e se encantando com o cenário que simula uma vila nos Alpes Suíços. Se o seu objetivo é criar uma memória mágica com seus filhos, este é o lugar.
