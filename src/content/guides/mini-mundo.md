@@ -4,7 +4,7 @@ order: 8
 sortOrder: 8
 destination: "gramado"
 type: "Atração"
-heroImage: "/mini-mundo-gramado.png"
+heroImage: "/mini-mundo-gramado.jpg"
 rating: 5
 priceRange: 3
 ---
