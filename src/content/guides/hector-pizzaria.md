@@ -3,7 +3,7 @@ title: "Hector Pizzaria Temática: Uma Aventura Mágica em Gramado em 2026"
 order: 13
 destination: "gramado"
 type: "Gastronomia"
-heroImage: "/guia-hector-pizzaria-gramado-2026.jpg"
+heroImage: "/hector-pizzaria-gramado.webp"
 rating: 5
 priceRange: 1
 ---
