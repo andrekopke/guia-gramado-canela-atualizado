@@ -29,7 +29,7 @@ Para quem está com crianças, o **Tchê Pierre** não é apenas um jantar, é u
 > **Dica de quem vai sempre:** Tente reservar as mesas mais próximas do palco central para que as crianças não percam nenhum detalhe da neve e dos personagens.
 > 
 > <!-- Link de Indicação -->
-> **[Garantir lugar na experiência temática do Tchê Pierre](COLE_SEU_LINK_TCHE_PIERRE_AQUI)**
+> **[Garantir lugar na experiência temática do Tchê Pierre](https://parksnet.com.br/destino/serra-gaucha/tche-pierre?bookingAgency=5788)**
 
 ---
 
