@@ -3,7 +3,7 @@ title: "Catedral de Pedra de Canela: Curiosidades e o Espetáculo Gratuito do Na
 order: 10
 destination: "canela"
 type: "Atração"
-heroImage: "/guia-catedral-pedra-canela-2026.jpg"
+heroImage: "/catedral-de-pedra-canela.jpg"
 rating: 5
 priceRange: 1
 ---
