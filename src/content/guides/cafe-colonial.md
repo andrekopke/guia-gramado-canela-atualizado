@@ -3,7 +3,7 @@ title: "Café Colonial: O Banquete Real de Gramado e Canela em 2026"
 order: 14
 destination: "gramado"
 type: "Gastronomia"
-heroImage: "/guia-cafe-colonial-serra-gaucha.jpg"
+heroImage: "/Bela-Vista-Café-Colonial.jpg"
 rating: 5
 priceRange: 1
 ---
