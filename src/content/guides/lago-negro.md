@@ -3,7 +3,7 @@ title: "Lago Negro em Gramado: O Passeio Gratuito Mais Charmoso de 2026"
 order: 12
 destination: "gramado"
 type: "Passeio"
-heroImage: "/guia-lago-negro-gramado-2026.jpg"
+heroImage: "/lago-negro-gramado.jpeg"
 rating: 5
 priceRange: 1
 ---
