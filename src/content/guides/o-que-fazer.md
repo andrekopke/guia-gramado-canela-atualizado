@@ -28,7 +28,7 @@ Melhor horário:
 
 ---
 
-### 🎬 Mini Mundo
+### [🎬 Mini Mundo](https://parksnet.com.br/destino/serra-gaucha/mini-mundo?bookingAgency=5788)
 Parque com réplicas em miniatura extremamente detalhadas.
 
 Ideal para:
@@ -94,7 +94,7 @@ Algumas atrações são mais turísticas, mas entregam boa experiência:
 - Alpen Park (aventura)  
 
 👉 Ver ingressos e experiências:  
-→ [Comprar passeios em Gramado]
+→ [Comprar passeios em Gramado](https://parksnet.com.br/destino/serra-gaucha?bookingagency=5788)
 
 ---
 
@@ -108,7 +108,7 @@ Destaques:
 - Chocolates artesanais  
 
 Para escolher melhor onde comer, veja o guia completo de  
-[onde comer em Gramado e Canela](/guia/onde-comer-em-gramado-e-canela)
+[onde comer em Gramado e Canela](https://parksnet.com.br/destino/serra-gaucha/churrascaria-gramadense?bookingAgency=5788)
 
 ---
 
@@ -125,7 +125,7 @@ Vantagens:
 - Mais praticidade  
 
 Para escolher bem, veja o guia de  
-[onde ficar em Gramado e Canela](/guia/onde-ficar-em-gramado-e-canela)
+[onde ficar em Gramado e Canela](https://tidd.ly/41GfYVj)
 
 ---
 
@@ -167,14 +167,14 @@ Para escolher bem, veja o guia de
 - Rua Coberta  
 
 **Dia 2**
-- Mini Mundo  
-- Snowland ou passeio pago  
-- Jantar especial  
+- [Mini Mundo](https://parksnet.com.br/destino/serra-gaucha/mini-mundo?bookingAgency=5788)  
+- [Snowland](https://parksnet.com.br/destino/serra-gaucha/snowland?bookingAgency=5788)  
+- [Jantar especial](https://parksnet.com.br/destino/serra-gaucha/restaurante-cacique?bookingAgency=5788) 
 
 **Dia 3**
 - Canela  
 - Catedral de Pedra  
-- Parque do Caracol  
+- [Parque do Caracol](https://parksnet.com.br/destino/serra-gaucha/caracol?bookingAgency=5788)
 
 ---
 
@@ -203,10 +203,10 @@ Pode ser, mas com planejamento dá para equilibrar bem os custos.
 ## 🚀 Planeje sua viagem
 
 ✔ Hospedagem bem localizada:  
-→ [Reservar hotéis em Gramado]
+→ [Reservar hotéis em Gramado](https://tidd.ly/41GfYVj)
 
-✔ Passeios e ingressos:  
-→ [Comprar passeios em Gramado]
+✔ Passeios e ingressos em OFERTA:  
+→ [Comprar com Desconto passeios em Gramado e Canela](https://parksnet.com.br/ofertas?destino=serra-gaucha&bookingAgency=5788)
 
 ✔ Evite imprevistos:  
 → [Ver seguro viagem com desconto]
