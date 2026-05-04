@@ -37,7 +37,7 @@ Para os aventureiros, o complexo conta com o **Eagle**, uma espécie de tirolesa
 Para evitar as filas que costumam se formar nos finais de semana e feriados, a recomendação de quem conhece a região é sempre garantir o acesso de forma antecipada. Isso permite que você organize melhor o seu dia e aproveite o tempo em outros passeios gratuitos da cidade.
 
 > **QUERO GARANTIR MEU ACESSO:**
-> <!-- COLE SEU LINK DO PARKSNET OU AFILIADO AQUI -->
+> <https://parksnet.com.br/destino/serra-gaucha/bondinhos-canela?bookingAgency=5788>
 > Reserve aqui seu lugar para os Bondinhos Aéreos e garanta a melhor vista da Cascata do Caracol.
 
 ---
