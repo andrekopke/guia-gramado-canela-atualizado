@@ -31,7 +31,7 @@ A Hector é extremamente popular e as filas podem ser longas. Em 2026, a melhor 
 
 > **✨ GARANTA SUA ENTRADA NA ESCOLA DE MAGIA:**
 > Não deixe para a última hora, pois as vagas para os aprendizes esgotam rapidamente, especialmente em feriados e finais de semana.
-> **[Clique aqui para reservar sua mesa e garantir seu ticket com desconto]((colar o link aqui))**
+> **[Clique aqui para reservar sua mesa e garantir seu ticket com desconto](https://parksnet.com.br/destino/serra-gaucha/hector-pizzaria?bookingAgency=5788)**
 
 ---
 
