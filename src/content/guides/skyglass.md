@@ -39,7 +39,7 @@ O Skyglass fica em uma área de preservação ambiental afastada do centro de Ca
 
 > **🎟️ GARANTA SUA AVENTURA:**
 > Por ser uma atração com capacidade controlada, as entradas para os horários nobres esgotam rapidamente.
-> **[Clique aqui para garantir seu ingresso para o Skyglass e o Abusado]((colar o link aqui))**
+> **[Clique aqui para garantir seu ingresso para o Skyglass e o Abusado](https://parksnet.com.br/destino/serra-gaucha/skyglass?bookingAgency=5788)**
 
 ---
 
