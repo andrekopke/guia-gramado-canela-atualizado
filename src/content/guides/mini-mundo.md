@@ -31,7 +31,7 @@ Tudo no parque funciona de verdade. Você verá trens em movimento, mini-habitan
 O Mini Mundo é um parque ao ar livre, mas possui uma capacidade limitada de visitantes por vez para garantir que todos consigam ver os detalhes das peças. Comprar antes é a melhor forma de garantir que você entrará no horário planejado.
 
 > **🎟️ COMPRE SEU INGRESSO AQUI:**
-> > Garanta sua entrada antecipada e aproveite os descontos exclusivos para leitores do nosso guia.
+> > [Garanta sua entrada antecipada e aproveite os descontos exclusivos para leitores do nosso guia].(https://parksnet.com.br/destino/serra-gaucha/mini-mundo?bookingAgency=5788)
 
 ---
 
