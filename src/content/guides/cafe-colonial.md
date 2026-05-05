@@ -30,19 +30,19 @@ Para viver essa experiência de gala, selecionamos as casas mais emblemáticas q
 
 ### 1. Gramado Café Colonial
 Um ícone que une a tradição das receitas de família com um serviço impecável. É o lugar onde a fartura encontra o acolhimento típico da serra.
-> **[Garantir lugar no Gramado Café Colonial com desconto]((colar o link aqui))**
+> **[Garantir lugar no Gramado Café Colonial com desconto](https://parksnet.com.br/destino/serra-gaucha/gramado-cafe-colonial?bookingAgency=5788)**
 
 ### 2. Sky Palace
 Situado na entrada da cidade, oferece uma estrutura imponente e moderna. O banquete aqui é servido em um ambiente que exala sofisticação e conforto.
-> **[Ver ofertas exclusivas para o Sky Palace]((colar o link aqui))**
+> **[Ver ofertas exclusivas para o Sky Palace](https://parksnet.com.br/destino/serra-gaucha/sky-palace?bookingAgency=5788)**
 
 ### 3. Café Bela Vista
 O pioneiro do Brasil! Visitar o Bela Vista é fazer uma viagem no tempo sem abrir mão do luxo e do padrão de qualidade que o tornou famoso mundialmente.
-> **[Reservar mesa no histórico Café Bela Vista]((colar o link aqui))**
+> **[Reservar mesa no histórico Café Bela Vista]()**
 
 ### 4. Café Della Nonna
 Com fortes raízes italianas, o Della Nonna foca no carinho e na variedade de massas e pães que fazem qualquer um se sentir parte da família.
-> **[Aproveitar o banquete do Café Della Nonna]((colar o link aqui))**
+> **[Aproveitar o banquete do Café Della Nonna](https://parksnet.com.br/destino/serra-gaucha/cafe-della-nonna?bookingAgency=5788)**
 
 ---
 
