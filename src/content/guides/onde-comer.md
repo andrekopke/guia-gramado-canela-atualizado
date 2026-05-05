@@ -39,7 +39,7 @@ Gramado consolidou-se como o polo das pizzarias temáticas. Mais do que comer, v
 
 ---
 
-> **💡 Dica de Economia Inteligente:** A gastronomia na Serra Gaúcha tem um ticket médio elevado. Para aproveitar os melhores restaurantes sem estourar o orçamento, utilize os cupons de desconto locais. **[Confira aqui nossa lista de parceiros e descontos ativos](/parceiros/restaurantes)**.
+> **💡 Dica de Economia Inteligente:** A gastronomia na Serra Gaúcha tem um ticket médio elevado. Para aproveitar os melhores restaurantes sem estourar o orçamento, utilize os cupons de desconto locais. **[Confira aqui nossa lista de parceiros e descontos ativos](https://parksnet.com.br/destino/serra-gaucha?bookingagency=5788)**.
 
 ---
 
