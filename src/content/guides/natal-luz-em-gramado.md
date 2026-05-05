@@ -67,7 +67,9 @@ Durante esse período você encontra:
 - Preços variam bastante conforme a data  
 
 👉 Ver ingressos disponíveis:  
-→ [Comprar ingressos do Natal Luz]
+→ [EM BREVE: Comprar ingressos do Natal Luz]
+
+Ótimo para Criamças: [Aldeia do Papai Noel](https://parksnet.com.br/destino/serra-gaucha/aldeia-do-papai-noel?bookingAgency=5788)
 
 ---
 
@@ -75,7 +77,7 @@ Durante esse período você encontra:
 
 - Rua Coberta  
 - Acendimento das luzes  
-- Vila de Natal  
+- Vila de Natal
 - Paradas no centro  
 
 ✔ Chegar com antecedência ajuda a garantir boa visualização
@@ -91,7 +93,7 @@ Durante esse período você encontra:
 - Facilita deslocamento à noite  
 
 👉 Ver hospedagens bem localizadas:  
-→ [Reservar hotéis em Gramado]
+→ [Reservar hotéis em Gramado](https://tidd.ly/41GfYVj)
 
 ---
 
@@ -217,10 +219,10 @@ Sim, facilita toda a logística e melhora muito a experiência.
 ## 🚀 Planeje sua viagem
 
 ✔ Hospedagem bem localizada:  
-→ [Reservar hotéis em Gramado]
+→ [Reservar hotéis em Gramado](https://tidd.ly/41GfYVj)
 
 ✔ Ingressos atualizados:  
-→ [Comprar ingressos do Natal Luz]
+→ [EM BREVE: Comprar ingressos do Natal Luz]()
 
-✔ Evite imprevistos:  
-→ [Ver seguro viagem com desconto]
+✔ Passagens Aéreas:  
+→ [Antecipe e tenha descontos](https://tidd.ly/4mCeftS)
