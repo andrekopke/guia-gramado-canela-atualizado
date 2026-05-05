@@ -25,6 +25,9 @@ Existem dois caminhos principais pelo ar para acessar a região:
 ### 2. Aeroporto Hugo Cantergiani (Caxias do Sul - CXJ)
 Está mais próximo geograficamente (70 km), mas a oferta de voos é limitada. É uma boa opção apenas se você encontrar uma promoção aérea muito agressiva, lembrando que a estrutura de transporte terrestre lá é um pouco mais restrita que na capital.
 
+## [✈️ Consiga Descontos nas Passagens Aéreas, Comprando Antecipadmente](https://tidd.ly/4mCeftS)
+
+
 ---
 
 ## 🚗 Aluguel de Carro: Autonomia na Serra
