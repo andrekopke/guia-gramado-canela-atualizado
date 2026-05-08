@@ -8,8 +8,6 @@ rating: 5
 priceRange: 3
 ---
 
-# O que Fazer em Gramado e Canela com Amor e Alma
-### Dicas Reais de Quem Conhece a Serra como a Palma da Mão
 
 Gramado e Canela não são apenas nomes em um mapa; são sentimentos que a gente carrega no peito. Depois de mais de **25 anos empreendendo nesta região**, operando meus negócios de forma digital e vendo essas ruas mudarem, entendi que existe um **amor de quem vive e de quem visita nunca mais esquece**. 
 
