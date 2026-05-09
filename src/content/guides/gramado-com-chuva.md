@@ -3,7 +3,7 @@ title: "Gramado com Chuva: O que fazer para não estragar seu roteiro em 2026"
 order: 19
 destination: "gramado"
 type: "Utilidade"
-heroImage: "/guia-gramado-com-chuva-2026.jpg"
+heroImage: "/gramado-com-chuva.webp"
 rating: 5
 priceRange: 1
 ---
