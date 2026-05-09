@@ -3,7 +3,7 @@ title: "Space Adventure Canela: Toque a Lua com a Segurança e o Charme da Nossa
 order: 34
 destination: "canela"
 type: "Experiência"
-heroImage: "/guia-space-adventure-canela-2026.jpg"
+heroImage: "/space-nasa-canela.webp"
 rating: 5
 priceRange: 3
 ---
