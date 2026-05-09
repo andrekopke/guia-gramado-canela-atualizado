@@ -9,8 +9,6 @@ priceRange: 3
 ---
 
 
-Gramado e Canela não são apenas nomes em um mapa; são sentimentos que a gente carrega no peito. Depois de mais de **25 anos empreendendo nesta região**, operando meus negócios de forma digital e vendo essas ruas mudarem, entendi que existe um **amor de quem vive e de quem visita nunca mais esquece**. 
-
 Se você está buscando **o que fazer em Gramado e Canela** em 2026, saiba que este é o roteiro mais amado pelas famílias brasileiras porque aqui a segurança é real, a mesa é farta e a paisagem é desenhada pela silhueta majestosa das nossas **Araucárias**. Esqueça os manuais frios de viagem. Prepare o coração, porque vou te mostrar a Serra Gaúcha através dos olhos de quem realmente pertence a este lugar.
 
 ---
