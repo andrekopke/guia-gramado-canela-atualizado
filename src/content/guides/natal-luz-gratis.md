@@ -3,7 +3,7 @@ title: "Natal Luz Grátis: Como Aproveitar os Shows e Desfiles Sem Gastar Nada (
 order: 27
 destination: "gramado"
 type: "Utilidade"
-heroImage: "/guia-natal-luz-gratis-2026.jpg"
+heroImage: "/portico-gramado-natal.webp"
 rating: 5
 priceRange: 1
 ---
