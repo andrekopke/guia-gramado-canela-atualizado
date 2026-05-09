@@ -3,7 +3,7 @@ title: "Maria Fumaça em Bento Gonçalves: O Guia Completo do Trem do Vinho (Emo
 order: 31
 destination: "bento-gonçalves"
 type: "Passeio"
-heroImage: "/maria-fumaca-bento-2026.WebP"
+heroImage: "/maria-fumaca-bento.WebP"
 rating: 5
 priceRange: 3
 ---
