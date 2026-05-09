@@ -3,7 +3,7 @@ title: "Neve em Gramado: Curiosidades, Histórico e como Viver o Sonho em 2026"
 order: 23
 destination: "gramado"
 type: "Utilidade"
-heroImage: "/guia-neve-gramado-2026.jpg"
+heroImage: "/neve-em-gramado.webp"
 rating: 5
 priceRange: 1
 ---
