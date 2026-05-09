@@ -3,7 +3,7 @@ title: "Roteiro 100% Grátis em Gramado e Canela: O Melhor da Serra Sem Gastar N
 order: 26
 destination: "gramado"
 type: "Utilidade"
-heroImage: "/guia-gramado-gratis-2026.jpg"
+heroImage: "/portico-gramado-gratis.webp"
 rating: 5
 priceRange: 1
 ---
