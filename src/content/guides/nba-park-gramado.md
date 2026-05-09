@@ -3,7 +3,7 @@ title: "NBA Park Gramado: Enterre o Estresse e Viva a Magia do Basquete na Serra
 order: 33
 destination: "gramado"
 type: "Experiência"
-heroImage: "/guia-nba-park-gramado-2026.jpg"
+heroImage: "/nba-park-canela.webp"
 rating: 5
 priceRange: 3
 ---
