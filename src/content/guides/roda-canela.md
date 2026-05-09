@@ -3,7 +3,7 @@ title: "Roda Canela: O Horizonte da Serra aos Seus Pés (Emoção e Vista de Cin
 order: 35
 destination: "canela"
 type: "Passeio"
-heroImage: "/roda-canela-cupons.webp"
+heroImage: "/roda-gigante-canela.webp"
 rating: 5
 priceRange: 2
 ---
