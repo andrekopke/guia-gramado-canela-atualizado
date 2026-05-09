@@ -3,7 +3,7 @@ title: "Gramado com Crianças: O Roteiro Perfeito para Diversão em Família em 
 order: 24
 destination: "gramado"
 type: "Utilidade"
-heroImage: "/guia-gramado-criancas-2026.jpg"
+heroImage: "/gramado-com-criancas.webp"
 rating: 5
 priceRange: 1
 ---
