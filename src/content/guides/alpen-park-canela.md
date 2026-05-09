@@ -3,7 +3,7 @@ title: "Aventura com Alma no Alpen Park: Onde a Emoção Encontra o Melhor Visua
 order: 32
 destination: "canela"
 type: "Passeio"
-heroImage: "/guia-alpen-park-canela-2026.jpg"
+heroImage: "/alpen-park-canela-cupons.webp"
 rating: 5
 priceRange: 2
 ---
