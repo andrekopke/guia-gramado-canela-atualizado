@@ -3,7 +3,7 @@ title: "Pôr do Sol no Olivas de Gramado: Natureza, Piquenique e a Magia do Azei
 order: 29
 destination: "gramado"
 type: "Utilidade"
-heroImage: "/olivas-gramado-parque.webp"
+heroImage: "/parque-olivas-gramado.webp"
 rating: 5
 priceRange: 1
 ---
