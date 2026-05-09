@@ -3,7 +3,7 @@ title: "Mundo a Vapor 2026: Tradição e Tecnologia no Coração de Canela"
 order: 36
 destination: "canela"
 type: "Passeio"
-heroImage: "/guia-mundo-a-vapor-2026.jpg"
+heroImage: "/mundo-a-vapor-canela.webp"
 rating: 5
 priceRange: 2
 ---
