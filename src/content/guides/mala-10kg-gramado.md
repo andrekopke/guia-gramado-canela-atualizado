@@ -3,7 +3,7 @@ title: "Mala de Mão 10kg ANAC: Medidas, Itens Proibidos e Direitos em caso de E
 order: 16
 destination: "gramado"
 type: "Utilidade"
-heroImage: "/guia-mala-gramado-2026.jpg"
+heroImage: "/tamanho-bagagem-de-bordo.webp"
 rating: 5
 priceRange: 1
 ---
