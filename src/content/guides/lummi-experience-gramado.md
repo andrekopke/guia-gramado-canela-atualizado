@@ -3,7 +3,7 @@ title: "Lummi Experience Gramado: Onde a Magia das Luzes Cria Memórias Eternas"
 order: 30
 destination: "gramado"
 type: "Experiência"
-heroImage: "/guia-lummi-experience-gramado-2026.jpg"
+heroImage: "/Lumni-Experience-Parque-de-Luzes-Gramado-ingresso.webp"
 rating: 5
 priceRange: 1
 ---
