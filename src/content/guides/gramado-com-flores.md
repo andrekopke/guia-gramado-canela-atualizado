@@ -3,7 +3,7 @@ title: "Gramado com Flores: O Guia de quem Vive e Ama a Estação das Hortênsia
 order: 28
 destination: "gramado"
 type: "Utilidade"
-heroImage: "/guia-gramado-flores-2026.jpg"
+heroImage: "/estrada-gramado-cidade-das-hortencias.webp"
 rating: 5
 priceRange: 1
 ---
