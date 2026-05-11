@@ -3,7 +3,7 @@ title: "Segurança em Gramado: Por que a cidade é referência e o que você pre
 order: 25
 destination: "gramado"
 type: "Utilidade"
-heroImage: "/guia-seguranca-gramado-2026.jpg"
+heroImage: "/gramado-e-seguro.webp"
 rating: 5
 priceRange: 1
 ---
