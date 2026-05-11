@@ -3,7 +3,7 @@ title: "Quanto Custa Viajar para Gramado em 2026: Estimativas e Planejamento Fin
 order: 17
 destination: "gramado"
 type: "Utilidade"
-heroImage: "/mc-donalds-borges-gramado.webp"
+heroImage: "/mc-donalds-gramado-barato.webp"
 rating: 5
 priceRange: 1
 ---
