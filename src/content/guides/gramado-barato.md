@@ -3,7 +3,7 @@ title: "Gramado Barato: 10 Estratégias Reais para Economizar em 2026"
 order: 20
 destination: "gramado"
 type: "Utilidade"
-heroImage: "/guia-gramado-barato-2026.jpg"
+heroImage: "/rua-torta-gramado-barato.webp"
 rating: 5
 priceRange: 1
 ---
