@@ -3,7 +3,7 @@ title: "Transfer, Uber ou Aluguel de Carro? O Guia de Transporte em Gramado (202
 order: 22
 destination: "gramado"
 type: "Utilidade"
-heroImage: "/bustour-gramaddo-canela.webp"
+heroImage: "/bustour-gramado-canela.webp"
 rating: 5
 priceRange: 1
 ---
