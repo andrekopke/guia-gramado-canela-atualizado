@@ -3,7 +3,7 @@ title: "Roteiro Gramado e Canela 2026: Opções Prontas para 3, 5 e 7 Dias"
 order: 21
 destination: "gramado"
 type: "Utilidade"
-heroImage: "/rua-torta-gramado-natal-luz"
+heroImage: "/rua-torta-gramado-natal-luz.webp"
 rating: 5
 priceRange: 1
 ---
