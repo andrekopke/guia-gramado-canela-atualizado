@@ -3,7 +3,7 @@ title: "Roteiro Gramado e Canela 2026: Opções Prontas para 3, 5 e 7 Dias"
 order: 21
 destination: "gramado"
 type: "Utilidade"
-heroImage: "/"
+heroImage: "/skyglass-plataforma-vidro-canela.webp"
 rating: 5
 priceRange: 1
 ---
