@@ -30,11 +30,11 @@ Veja o que você vai encontrar em cada parada do passaporte:
 ## 💡 Dica de Ouro: Como organizar a logística do combo
 As atrações do Grupo Dreams não ficam todas no mesmo lugar. Elas estão espalhadas ao longo da Avenida das Hortênsias (entre Gramado e Canela).
 
-Minha estratégia: **Não tente fazer as 7 atrações em uma única tarde.** O passaporte tem validade e você pode dividir as visitas. Uma boa ideia é fazer os museus de carros e cera em um dia, e deixar o Vale dos Dinossauros para outro momento em que você já estiver em Canela. Outra dica: **Compre o passaporte online.** O valor do combo é muito menor do que se você comprar cada ingresso individualmente nas bilheterias físicas.
+Minha estratégia: **Não tente fazer as 7 atrações em uma única tarde.** O passaporte tem validade e você pode dividir as visitas. Uma boa ideia é fazer os museus de carros e cera em um dia, e deixar o Vale dos Dinossauros para outro momento em que você já estiver em Canela. Outra dica: **[Compre o passaporte online.](https://dub.sh/GuiaGramado-Ingressos-Dreams)** O valor do combo é muito menor do que se você comprar cada ingresso individualmente nas bilheterias físicas.
 
 > **🎟️ ECONOMIZE COM O PASSAPORTE:**
 > Garanta acesso total às melhores atrações com um desconto imbatível. Compre seu passaporte digital agora e organize sua diversão.
-> **[Clique aqui para comprar o Passaporte Dreams com o melhor preço]((colar o link aqui))**
+> **[Clique aqui para comprar o Passaporte Dreams com o melhor preço](https://dub.sh/GuiaGramado-Ingressos-Dreams)**
 
 ---
 
