@@ -32,7 +32,7 @@ Minha estratégia: **Compre os ingressos online com antecedência e chegue logo 
 
 > **🎟️ VIVA ESSA NOSTALGIA EM FAMÍLIA:**
 > Garanta os ingressos para os seus filhos conhecerem a Turma da Mônica de perto. Compre online de forma segura.
-> **[Clique aqui para comprar ingressos da Vila da Mônica com as melhores tarifas]((colar link aqui))**
+> **[Clique aqui para comprar ingressos da Vila da Mônica com as melhores tarifas](https://parksnet.com.br/destino/serra-gaucha/vila-da-monica?bookingAgency=5788)**
 
 ---
 
