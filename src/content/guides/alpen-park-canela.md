@@ -76,4 +76,4 @@ Aplicativos como Uber e 99 funcionam bem na região, mas como o parque fica um p
 
 ---
 
-**Coração acelerado com a vista?** Depois de tanta emoção, nada como o silêncio e a paz de um dos lugares mais sagrados da serra. Confira nosso próximo guia: **[Catedral de Pedra de Canela: Fé, Arte e o Espetáculo das Luzes](/guia/catedral-de-pedra-canela)**.
+**Coração acelerado com a vista?** Depois de tanta emoção, nada como o silêncio e a paz de um dos lugares mais sagrados da serra. Confira nosso próximo guia: **[Catedral de Pedra de Canela: Fé, Arte e o Espetáculo das Luzes](/guia/catedral-canela)**.
