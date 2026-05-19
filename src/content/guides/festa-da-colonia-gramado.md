@@ -32,7 +32,7 @@ Minha estratégia: **Visite a festa em dias de semana ou chegue para almoçar be
 
 > **🎟️ APROVEITE O MELHOR DE GRAMADO:**
 > A festa é gratuita, mas a cidade oferece muito mais. Garanta seus ingressos para outras experiências e planeje seu roteiro com antecedência.
-> **[Clique aqui para conferir ofertas de passeios e ingressos em Gramado]((colar o link aqui))**
+> **[Clique aqui para conferir ofertas de passeios e ingressos em Gramado](https://dub.sh/GuiaGramado-Ingressos)**
 
 ---
 
