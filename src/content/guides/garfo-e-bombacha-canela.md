@@ -32,7 +32,7 @@ Minha estratégia: **Se você quer o espetáculo máximo com força total, vá n
 
 > **🎟️ VIVA A ESSÊNCIA GAÚCHA:**
 > Garanta seu lugar no maior espetáculo folclórico da serra e saboreie o verdadeiro costelão de fogo de chão. Reserve seu passaporte.
-> **[Clique aqui para buscar ofertas e garantir seu ingresso para a Garfo e Bombacha]((colar link aqui))**
+> **[Clique aqui para buscar ofertas e garantir seu ingresso para a Garfo e Bombacha](garfo-e-bombacha-canela)**
 
 ---
 
