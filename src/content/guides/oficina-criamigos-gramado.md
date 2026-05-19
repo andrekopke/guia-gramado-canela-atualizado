@@ -32,7 +32,7 @@ Minha estratégia: **Vá com roupas bem confortáveis e fáceis de tirar, já qu
 
 > **🎟️ MERGULHE NESSA DIVERSÃO:**
 > Garanta suas meias exclusivas e reserve o passaporte da sua família para o parque mais interativo da região.
-> **[Clique aqui para buscar ofertas e garantir seu ingresso para a Oficina Criamigos]((colar link aqui))**
+> **[Clique aqui para buscar ofertas e garantir seu ingresso para a Oficina Criamigos](https://parksnet.com.br/destino/serra-gaucha/oficina-criamigos?bookingAgency=5788&cupom=COPA26)**
 
 ---
 
