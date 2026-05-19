@@ -32,7 +32,7 @@ Minha estratégia: **Comece o passeio descendo pelas trilhas laterais e deixe as
 
 > **🎟️ GARANTA SEU PASSAPORTE PARA A FANTASIA:**
 > Evite filas e garanta o melhor preço para toda a família comprando seu ingresso antes de sair de casa.
-> **[Clique aqui para comprar seu ingresso para o Parque Florybal com desconto]((colar o link aqui))**
+> **[Clique aqui para comprar seu ingresso para o Parque Florybal com desconto](https://parksnet.com.br/ingressos/?bookingagency=5788)**
 
 ---
 
