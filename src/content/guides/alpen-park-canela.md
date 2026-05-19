@@ -32,7 +32,7 @@ Minha estratégia de quem sempre volta: **Chegue logo na abertura do parque, às
 
 > **🎟️ GARANTA SUA AVENTURA:**
 > Não deixe para a última hora. Garanta seu passaporte com desconto e tenha acesso ilimitado às principais atrações do parque.
-> **[Clique aqui para buscar promoções e reservar seu passaporte para o Alpen Park]((colar o link aqui))**
+> **[Clique aqui para buscar promoções e reservar seu passaporte para o Alpen Park](https://parksnet.com.br/destino/serra-gaucha/alpen-park?bookingAgency=5788)**
 
 ---
 
