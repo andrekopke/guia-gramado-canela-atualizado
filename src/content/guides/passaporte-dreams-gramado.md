@@ -3,7 +3,7 @@ title: "Passaporte Dreams Gramado: 7 Atrações Imperdíveis em um Só Bilhete"
 order: 38
 destination: "gramado"
 type: "Passeio"
-heroImage: "/passaporte-dreams-gramado.webp"
+heroImage: "/passaporte-dreams-gramado-desconto.webp"
 rating: 5
 priceRange: 3
 ---
