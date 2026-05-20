@@ -32,7 +32,7 @@ Minha estratégia: **Compre o seu passaporte com prioridade de assento online.**
 
 > **🎟️ VIVA ESSA AVENTURA SELVAGEM:**
 > Garanta o rodízio da sua família com acesso aos shows e à maior área kids temática de Gramado comprando seu ingresso digital.
-> **[Clique aqui para buscar ofertas e garantir seu ingresso para a Kongo Pizzaria]((colar link aqui))**
+> **[Clique aqui para buscar ofertas e garantir seu ingresso para a Kongo Pizzaria](https://parksnet.com.br/destino/serra-gaucha/kongo-pizzaria?cupom=COPA26&bookingAgency=5788)**
 
 ---
 
