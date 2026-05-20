@@ -32,7 +32,7 @@ Minha estratégia: **Aproveite a visita para fazer a sua parada de café e compr
 
 > **🎟️ VIVA ESSA JORNADA DOCE:**
 > Descubra a magia do chocolate artesanal mais tradicional e garanta uma tarde inesquecível para as crianças.
-> **[Clique aqui para buscar ofertas e garantir seu ingresso para o Reino do Chocolate]((colar link aqui))**
+> **[Clique aqui para buscar ofertas e garantir seu ingresso para o Reino do Chocolate](https://parksnet.com.br/destino/serra-gaucha/reino-do-chocolate?bookingAgency=5788&cupom=COPA26)**
 
 ---
 
