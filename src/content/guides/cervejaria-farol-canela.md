@@ -32,7 +32,7 @@ Minha estratégia: **Suba os 137 degraus do Farol logo antes de sentar para almo
 
 > **🎟️ VIVA A TRADIÇÃO ALEMÃ:**
 > Garanta seu lugar no tour com degustação e saboreie o melhor da culinária típica na primeira cervejaria artesanal da região.
-> **[Clique aqui para buscar ofertas e garantir seu ingresso para a Cervejaria Farol]((colar link aqui))**
+> **[Clique aqui para buscar ofertas e garantir seu ingresso para a Cervejaria Farol](https://parksnet.com.br/destino/serra-gaucha/cervejaria-do-farol?cupom=COPA26&bookingAgency=5788)**
 
 ---
 
