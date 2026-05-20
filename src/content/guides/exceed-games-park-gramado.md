@@ -32,7 +32,7 @@ Minha estratégia: **Visite o parque logo nas primeiras horas da manhã ou no fi
 
 > **🎟️ VIVA A MÁXIMA VELOCIDADE:**
 > Garanta seu passaporte para o mundo da alta tecnologia e sinta a adrenalina dos simuladores profissionais. Compre online.
-> **[Clique aqui para buscar ofertas e garantir seu ingresso para o Exceed Games Park]((colar link aqui))**
+> **[Clique aqui para buscar ofertas e garantir seu ingresso para o Exceed Games Park]((https://parksnet.com.br/destino/serra-gaucha/exceed-park?bookingAgency=5788&cupom=COPA26)**
 
 ---
 
