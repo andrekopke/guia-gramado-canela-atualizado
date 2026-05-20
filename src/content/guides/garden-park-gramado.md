@@ -32,7 +32,7 @@ Minha estratégia: **Visite o parque no início da manhã ou nas duas últimas h
 
 > **🎟️ VIVA A PAZ DOS JARDINS:**
 > Garanta seu acesso a um dos cenários naturais mais bonitos e bem cuidados da região. Compre online com praticidade.
-> **[Clique aqui para buscar ingressos e pacotes para o Garden Park Gramado]((colar link aqui))**
+> **[Clique aqui para buscar ingressos e pacotes para o Garden Park Gramado](parksnet.com.br/destino/serra-gaucha/garden-park?bookingAgency=5788&cupom=COPA26)**
 
 ---
 
