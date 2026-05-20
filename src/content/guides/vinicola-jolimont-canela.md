@@ -32,7 +32,7 @@ Minha estratégia: **Reserve o tour para o horário do meio da tarde.** Assim, v
 
 > **🎟️ BRINDE NAS MONTANHAS:**
 > Garanta sua taça de vidro exclusiva inclusa no ingresso e viva a melhor experiência de enoturismo da serra.
-> **[Clique aqui para buscar ofertas e garantir seu ingresso para a Vitivinícola Jolimont]((colar link aqui))**
+> **[Clique aqui para buscar ofertas e garantir seu ingresso para a Vitivinícola Jolimont](https://parksnet.com.br/destino/serra-gaucha/jolimont?cupom=COPA26&bookingAgency=5788)**
 
 ---
 
