@@ -32,7 +32,7 @@ Em 2026, a nova tendência são as **mochilas cabine**. Elas são mais leves que
 
 > **🛒 ONDE COMPRAR A MALA CERTA:**
 > Evite comprar malas sem certificação. Uma mala fora do padrão pode custar o dobro do valor em taxas no aeroporto.
-> **[Clique aqui para ver as malas e mochilas cabine padrão ANAC mais vendidas na Amazon]((colar o link aqui))**
+> **[Clique aqui para ver as malas e mochilas cabine padrão ANAC mais vendidas na Amazon](https://amzn.to/4dqRk0p)**
 
 ---
 
@@ -96,7 +96,7 @@ Sim, alimentos secos e industrializados são permitidos. Evite alimentos pastoso
 **14. Como saber se minha mala é padrão ANAC?**
 Verifique a etiqueta do fabricante ou use uma fita métrica. Lembre-se: 55x35x25cm. Se passar 1cm, pode ser barrada.
 
-**15. Onde encontrar as melhores malas para 2026?**
+**15. [Onde encontrar as melhores malas para 2026?](https://amzn.to/4dqRk0p)**
 Procure por marcas que oferecem garantia contra danos de transporte e que utilizam materiais como polipropileno ou policarbonato.
 
 ---
