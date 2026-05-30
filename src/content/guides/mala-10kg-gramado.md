@@ -47,8 +47,8 @@ Se ao chegar no aeroporto sua mala estiver rachada, violada ou simplesmente não
 
 ---
 
-## 💡 Dica de Autoridade: O sistema de camadas
-Para Gramado, não leve casacos pesados na mala. Use o sistema de camadas: uma segunda pele térmica, um fleece e uma jaqueta que corta o vento. **Vá vestindo o casaco mais pesado no avião** para economizar espaço e peso na sua mala de mão.
+## 💡 Dica de Viajante: O sistema de camadas
+Para Gramado, não leve casacos pesados na mala. Use o sistema de camadas: [uma segunda pele térmica](https://amzn.to/4deSlK4), um fleece e uma jaqueta que corta o vento. **Vá vestindo o casaco mais pesado no avião** para economizar espaço e peso na sua mala de mão.
 
 ---
 
